@@ -1,12 +1,12 @@
 ---
 description: >-
-  Toutes les ressources pour aider les membres de la communauté à s'approprier
-  la plateforme Onyxia et ses services!
+  All resources to help community members to get onboarded on the platform and
+  the services available!
 ---
 
-# 🧑🤝🧑 Communauté SSP Cloud
+# 🧑🤝🧑 SGCIP Community
 
-## Nouvel utilisateur du datalab?&#x20;
+## Nouvel utilisateur du datalab?
 
 Découvre facilement les premiers usages de la plateforme en suivant ce petit guide.
 
@@ -37,4 +37,3 @@ Découvre facilement les premiers usages de la plateforme en suivant ce petit gu
 {% content-ref url="docs/comment-contribuer-1/comment-contribuer/" %}
 [comment-contribuer](docs/comment-contribuer-1/comment-contribuer/)
 {% endcontent-ref %}
-
