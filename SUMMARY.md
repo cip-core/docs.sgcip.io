@@ -5,7 +5,7 @@
 
 ## Onyxia - Guide
 
-* [Principes du Datalab](docs/onyxia-guide/decouverte-du-datalab.md)
+* [Principles of Datalab](docs/onyxia-guide/decouverte-du-datalab.md)
 * [Première utilisation](onyxia-guide/premiere-utilisation.md)
 * [Contrôle de version](onyxia-guide/controle-de-version.md)
 * [Stockage de données](onyxia-guide/stockage-de-donnees.md)
