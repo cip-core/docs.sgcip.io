@@ -1,6 +1,6 @@
 ---
 description: >-
-  All resources to help community members to get onboarded on the platform and
+  All resource to help community members to get onboarded on the platform and
   the services available!
 ---
 
