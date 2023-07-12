@@ -1,72 +1,72 @@
 ---
 description: >-
-  Utiliser MLFlow et les pokémons pour découvrir le MLOps et automatiser puis
-  améliorer la qualité des modèles de production.
+  Use MLFlow and pokemons to discover MLOps and automate and improve the quality
+  of production models.
 ---
 
-# MLOps et Random Forest Clustering : Démonstration de MLFlow avec les statistiques des Pokémons
+# MLOps and Random Forest Clustering: Demonstration of MLFlow with Pokémon statistics
 
-## La démonstration en quelques mots
+## The demonstration in a few words
 
-Cette démonstration est un modèle Random Forest (Forêt d’arbre de décision) pour classer les Pokémon. C'est-à-dire savoir s'ils sont légendaires ou non. Ensuite, nous appliquerons ce modèle dans une application Web et fournirons une API de service Web. L'objectif de cette démonstration est de lister les caractéristiques des Pokémons (attaque, défense,  vitesse, les points de vie ou points de combats, etc.) et d'entraîner un modèle de Random Forest afin de classer et prédire si un Pokémon est légendaire. Nous voulons aussi définir l'importance de chaque caractéristique dans la distinction d'un Pokémon légendaire.  Pour finir, nous appliquerons ce modèle dans une application Web et fournirons une API de service Web, afin que chacun puisse tester et vérifier si son Pokémon est légendaire.
+This demo is a Random Forest model for ranking Pokemon. That is, whether they are legendary or not. Next, we'll apply this pattern in a web application and provide a web service API. The objective of this demonstration is to list the characteristics of Pokémon (attack, defense, speed, life points or combat points, etc.) and to train a Random Forest model in order to classify and predict whether a Pokémon is legendary. We also want to define the importance of each characteristic in distinguishing a legendary Pokemon. Finally, we will apply this model in a web application and provide a web service API, so that everyone can test and verify if their Pokemon is legendary.
 
-## L'usage du datalab&#x20;
+## The use of the data lab
 
-Ce projet est à l'origine développé en Python pur sans aucun support de ML Ops. Il est donc difficile de poursuivre l'intégration (CI), de poursuivre le déploiement (CD) et de poursuivre l'entrainement du modèle (CT). En migrant ce projet vers le datalab, nous avons pu profiter de la gestion des données et du service ML Ops fournis par la plateforme. Nous voulons mettre en évidence certains avantages :&#x20;
+This project is originally developed in pure Python without any ML Ops support. It is therefore difficult to continue the integration (CI), to continue the deployment (CD) and to continue the training of the model (CT). By migrating this project to the datalab, we were able to take advantage of the data management and ML Ops service provided by the platform. We want to highlight some advantages :
 
-1. Amélioration significative des performances du modèle
-2. Raccourcissement du cycle de vie de développement du modèle&#x20;
-3. Automatiser le processus de déploiement du modèle
+1. Significant improvement in model performance
+2. Shortening the model development lifecycle
+3. Automate the model deployment process
 
-#### ML Ops avec Datalab
+#### ML Ops with Datalab
 
-Lorsque vous travaillez en équipe pour développer un modèle, vous devez faire l'expérience douloureuse de la **journalisation** du modèle et de la façon dont le modèle est formé (par exemple, les réglages d'hyper-paramètres, l'emplacement du jeu de données d'entraînement, etc.) . Nous pouvons facilement appliquer un développement continu sur notre code de modèle en utilisant des outils tels que **GitHub**.  Nous savons que le code est un facteur qui peut avoir un impact sur les performances d'un modèle. Mais la plupart du temps, le réglage des hyper-paramètres et l'ensemble de données d'entraînement ont encore plus d'impact que le code sur le modèle. Le datalab fournit un service appelé **MLflow** qui résout tous ces problèmes.
+When working as a team to develop a model, you have to experience the painful experience of **logging** the model and how the model is trained (e.g. hyper-parameter settings, training dataset location, etc.). We can easily apply continuous development on our model code using tools like **GitHub**. We know that code is a factor that can impact model performance. But most of the time, tuning the hyper-parameters and the training dataset have even more impact than the code on the model. The datalab provides a service called **MLflow** that solves all these problems.
 
-**Suivi de modèle**
+**Model tracking**
 
-Pour chaque modèle entraîné, on peut suivre l'importance des caractéristiques des Pokémons, les configurations d'hyper-paramètres, l'emplacement des données d'entraînement, leurs métriques de validation (précision, ROC, AUC, etc.). Nous pouvons également comparer différents modèles pour l'améliorer et expliquer quel paramètre rend cette amélioration possible.
+For each trained model, one can track the importance of the Pokémons characteristics, hyper-parameter configurations, location of training data, their validation metrics (accuracy, ROC, AUC, etc.). We can also compare different models to improve it and explain what parameter makes this improvement possible.
 
-![Figure 1 - Suivi de modèle](https://minio.lab.sspcloud.fr/pengfei/diffusion/pokemon/pokemon\_metric.PNG)
+![Figure 1 - Model tracking](https://minio.lab.sspcloud.fr/pengfei/diffusion/pokemon/pokemon\_metric.PNG)
 
-![Figure 2 - Comparaison de modèle](https://minio.lab.sspcloud.fr/pengfei/diffusion/pokemon/pokemon\_mdoel\_camparing.PNG)
+![Figure 2 - Model comparison](https://minio.lab.sspcloud.fr/pengfei/diffusion/pokemon/pokemon\_mdoel\_camparing.PNG)
 
-**Déploiement de modèle**
+**Model deployment**
 
-Pour déployer un modèle, nous devons définir la version et l'état du modèle, et l'application de déploiement peut récupérer le modèle approprié en fonction de ces informations.&#x20;
+To deploy a model, we need to set the version and state of the model, and the deploying application can retrieve the appropriate model based on this information..
 
-![Figure 3 - Déploiement de modèle](https://minio.lab.sspcloud.fr/pengfei/diffusion/pokemon/model\_version.PNG)
+![Figure 3 - Model deployment](https://minio.lab.sspcloud.fr/pengfei/diffusion/pokemon/model\_version.PNG)
 
-Dans l'exemple, notre modèle a quatre versions : une en production, une en développement et deux en archive.
+In the example, our model has four versions: one in production, one in development and two in archive.
 
-#### Service de gestion des données au sein de Datalab
+**Data management service within Datalab**
 
-Chaque année, la société Pokémon publie de nouveaux types de Pokémons. Chaque version est appelée une génération. Jusqu'à présent, nous avons sept générations. En conséquence, les données brutes de Pokémons sont divisées en différents fichiers pour chaque génération. Dans de nombreux cas, ceux qui collectent et téléchargent les données ne sont pas ceux qui les utilisent pour entraîner le modèle. Par conséquent, c'est un nouveau défi de trouver les données appropriées pour entraîner votre modèle. Heureusement, le datalab nous fournit un service de gestion de données appelé Atlas qui nous permet de trouver des données facilement.
+Every year, the Pokémon Company releases new types of Pokémon. Each version is called a generation. So far we have seven generations. Accordingly, the raw data of Pokémons is divided into different files for each generation. In many cases, the people collecting and downloading the data are not the people using it to train the model. Therefore, it is a new challenge to find the appropriate data to train your model. Fortunately, the datalab provides us with a data management service called Atlas that allows us to find data easily.
 
-We can search data by their name, type, owner, etc. Figure-4 shows an example of full text search. &#x20;
+We can search data by their name, type, owner, etc. Figure-4 shows an example of full text search.
 
-Nous pouvons rechercher des données par leur nom, type, propriétaire, etc.
+We can search for data by its name, type, owner, etc..
 
-![Figure 4 - Exemple de recherche textuelle (Atlas)](https://minio.lab.sspcloud.fr/pengfei/diffusion/pokemon/atlas\_search\_by\_text.PNG)
+![Figure 4 -Text search example (Atlas)](https://minio.lab.sspcloud.fr/pengfei/diffusion/pokemon/atlas\_search\_by\_text.PNG)
 
-Si le gestionnaire de données a configuré les métadonnées de classification, nous pouvons même rechercher des données par génération de Pokémons.&#x20;
+If the data manager has configured the classification metadata, we can even search data by generation of Pokemons.
 
-![Figure 5 - Exemple de recherche par génération de pokémons (Atlas) ](https://minio.lab.sspcloud.fr/pengfei/diffusion/pokemon/atlas\_search\_by\_class.png)
+![Figure 5 -Example of search by pokemon generation (Atlas)](https://minio.lab.sspcloud.fr/pengfei/diffusion/pokemon/atlas\_search\_by\_class.png)
 
-Après avoir trouvé les données, nous pouvons accéder à toutes les métadonnées liées telles que le nom, l'emplacement, le propriétaire, la taille, la date de création, etc. &#x20;
+After finding the data, we can access all the related metadata such as name, location, owner, size, creation date, etc..
 
-![Figure 6 - Exemple de metadonnées pour le jeu de données sur les Pokémons (Atlas)](https://minio.lab.sspcloud.fr/pengfei/diffusion/pokemon/atlas\_data\_detail.PNG)
+![Figure 6 -Example of metadata for the Pokémon dataset (Atlas)](https://minio.lab.sspcloud.fr/pengfei/diffusion/pokemon/atlas\_data\_detail.PNG)
 
-## Liens utiles (Données et modèle)
+## Useful links (Data and model)
 
-L'ensemble de données nettoyé complet est disponible ici:
+The full cleansed dataset is available here:
 
 {% embed url="https://minio.lab.sspcloud.fr/pengfei/mlflow-demo/pokemon-cleaned.csv" %}
 
-Le codes source sur la façon de d'entrainer, suivre et déployer le modèle sont disponible ici :&#x20;
+Source codes on how to train, track and deploy the model are available here :
 
 {% embed url="https://github.com/pengfei99/mlflow-pokemon-example.git" %}
 
-Pour utiliser le modèle le plus récemment déployé, vous pouvez utiliser la commande curl suivante pour interroger notre service Web :
+To use the most recently deployed model, you can use the following curl command to query our web service :
 
 ```
 curl -X POST -H "Content-Type:application/json; format=pandas-split" --data \
