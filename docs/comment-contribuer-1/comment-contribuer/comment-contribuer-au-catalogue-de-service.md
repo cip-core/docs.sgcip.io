@@ -1,11 +1,11 @@
 ---
 description: >-
-  Tous les services proposés sont open source et se basent sur des images
-  conteneurisé avec Kubernetes.
+  All the services offered are open source and are based on containerized images
+  with Kubernetes.
 ---
 
-# 🔧​​ Contribuer au catalogue de service ?
+# 🔧​​ Contribute to the service catalog ?
 
-Les services du datalab sont des applications [Kubernetes](https://kubernetes.io/docs/home/) qui se structurent avec des modèles de _charts_ [Helm](https://helm.sh). Les _charts_  aident à définir, installer et mettre à niveau les différentes applications réalisés avec Kubernetes. Ces modèles sont  faciles à créer, à versionner, à partager et à publier. Commencez donc à utiliser Helm et **contribuer à notre catalogue de datascience !**
+Datalab services are applications [Kubernetes](https://kubernetes.io/docs/home/) which are structured with chart models [Helm](https://helm.sh). The charts help to define, install and upgrade the different applications made with Kubernetes. These models are easy to create, version, share, and publish. So start using Helm and contribute to our datascience catalog!
 
-## ... En cours d'écriture 🚧
+## ... In writing 🚧

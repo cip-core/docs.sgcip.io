@@ -1,23 +1,23 @@
 ---
-description: Pour modifier ou proposer du contenu (Projets, tutoriels, exemples,  etc.)
+description: To modify or propose content (Projects, tutorials, examples, etc.)
 ---
 
-# 🤝 Comment contribuer à la communauté?
+# 🤝 How to contribute to the community?
 
-## 🤝 Pourquoi contribuer ?
+## 🤝 Why contribute?
 
-* Tu souhaites[ écrire un tutoriel, une actualités, présenter un projet réalisé](comment-utiliser-et-editer-gitbook-pour-la-documentation.md) ou tout simplement quelques bouts de code ?
-* Tu souhaites mettre à jour ou corriger du contenu sur ce guide ?
-* Tu souhaites [participer au contenu du catalogue de services](comment-contribuer-au-catalogue-de-service.md) ?
-* Tu souhaites faire des retours sur le datalab ?
+* You wish[ écrire un tutoriel, une actualités, présenter un projet réalisé](comment-utiliser-et-editer-gitbook-pour-la-documentation.md) Or just a few snippets of code?
+* Do you want to update or correct content on this guide?
+* You wish [participer au contenu du catalogue de services](comment-contribuer-au-catalogue-de-service.md) ?
+* You want to give feedback on the datalab ?
 
-## 🚩 L'organisation de la documentation&#x20;
+## 🚩 The organization of documentation
 
-* **Onyxia - Guide** pour tous les pas à pas de prise en main de la plateforme Onyxia
-* **Tutoriels** pour diverses aides, guides et formations
-* **Démonstrations** pour proposer des bouts de codes, des projets exploratoire, etc.
-* **Actualités** pour écrire un article de blog ou présenter un évènement
-* **Projets** pour présenter des cas d'usages du datalab et les services et fonctionnalités utilisées.
+* Onyxia - Step-by-step guide for getting started with the Onyxia platform
+* Tutorials for various aids, guides and trainings
+* Demonstrations to propose pieces of code, exploratory projects, etc.
+* News to write a blog post or present an event
+* Projects to present datalab use cases and the services and functionalities used.
 
 {% content-ref url="comment-utiliser-et-editer-gitbook-pour-la-documentation.md" %}
 [comment-utiliser-et-editer-gitbook-pour-la-documentation.md](comment-utiliser-et-editer-gitbook-pour-la-documentation.md)
@@ -31,11 +31,10 @@ description: Pour modifier ou proposer du contenu (Projets, tutoriels, exemples,
 [referencer-son-contenu-sur-le-site-sspcloud.fr.md](referencer-son-contenu-sur-le-site-sspcloud.fr.md)
 {% endcontent-ref %}
 
-## Contribuer au catalogue de services?
+## Contribute to the service catalog?
 
-Les services du datalab sont des applications [Kubernetes](https://kubernetes.io/docs/home/) qui se structurent avec des modèles de _charts_ [Helm](https://helm.sh). Les _charts_  aident à définir, installer et mettre à niveau les différentes applications réalisés avec Kubernetes. Ces modèles sont  faciles à créer, à versionner, à partager et à publier. Commencez donc à utiliser Helm et **contribuer à notre catalogue de datascience !**
+Datalab services are applications [Kubernetes](https://kubernetes.io/docs/home/) which are structured with chart models [Helm](https://helm.sh). The charts help to define, install and upgrade the different applications made with Kubernetes. These models are easy to create, version, share, and publish. So start using Helm and contribute to our datascience catalog!
 
 {% content-ref url="comment-contribuer-au-catalogue-de-service.md" %}
 [comment-contribuer-au-catalogue-de-service.md](comment-contribuer-au-catalogue-de-service.md)
 {% endcontent-ref %}
-
