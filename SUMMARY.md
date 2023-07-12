@@ -7,7 +7,7 @@
 
 * [Principles of Datalab](docs/onyxia-guide/decouverte-du-datalab.md)
 * [First time use](onyxia-guide/premiere-utilisation.md)
-* [Contrôle de version](onyxia-guide/controle-de-version.md)
+* [Version control](onyxia-guide/controle-de-version.md)
 * [Stockage de données](onyxia-guide/stockage-de-donnees.md)
 * [Gestion des secrets](onyxia-guide/gestion-des-secrets.md)
 * [Lancer un projet R avec le datalab](docs/onyxia-guide/projet-de-demonstration-r-avec-onyxia.md)

@@ -1,87 +1,85 @@
 ---
-description: >-
-  Intégration du Datalab avec le logiciel Git et la plateforme de développement
-  GitHub
+description: Datalab integration with Git software and GitHub development platform
 ---
 
-# Contrôle de version
+# Version control
 
-## Pourquoi utiliser le contrôle de version ?
+## Why use version control?
 
-Le Datalab est une plateforme mutualisée : les ressources utilisées par les services sont partagées entre les différents utilisateurs. A ce titre, les services du Datalab fonctionnent sur le modèle des conteneurs éphémères : dans un usage standard, l'utilisateur lance un service, réalise des traitements de données, sauvegarde le code qui a permis de réaliser ces traitements, et supprime l'instance du service. Cette sauvegarde du code est grandement facilitée par l'usage du contrôle de version.
+The Datalab is a shared platform: the resources used by the services are shared between the different users. As such, Datalab services operate on the model of ephemeral containers: in standard use, the user launches a service, performs data processing, saves the code that made it possible to perform these processes, and deletes the instance of the service. This saving of code is greatly facilitated by the use of version control.
 
-Cette considération de performance ne doit cependant pas être vue comme une contrainte : le contrôle de version est une bonne pratique essentielle de développement. Les bénéfices sont nombreux, aussi bien à titre individuel :&#x20;
+However, this performance consideration should not be seen as a constraint: version control is an essential development best practice. The benefits are numerous, both individually:
 
-* le projet local est synchronisé avec un serveur distant, rendant la perte de code quasi impossible ;&#x20;
-* l'historique complet des choix et modifications effectuées sur le projet est conservé ;
-* l'utilisateur peut parcourir cet historique pour rechercher les modifications qui ont pu créer des erreurs, et décider à tout moment de revenir à une version précédente du projet, ou bien de certains fichiers.
+* The local project is synchronized with a remote server, making code loss almost impossible;
+* The complete history of choices and changes made on the project is preserved;
+* The user can go through this history to look for changes that may have created errors, and decide at any time to revert to a previous version of the project, or to certain files.
 
-que dans le cadre de projets collaboratifs :&#x20;
+In the context of collaborative projects :
 
-* le travail simultané sur un même projet est possible, sans risque de perte ;&#x20;
-* l'utilisateur peut partager ses modifications tout en bénéficiant de celles des autres ;
-* il devient possible de contribuer à des projets open-source, pour lesquels l'usage de Git est très largement standard.
+* Simultaneous work on the same project is possible, without risk of loss;
+* The user can share his changes while benefiting from those of others;
+* It becomes possible to contribute to open-source projects, for which the use of Git is largely standard.
 
 {% hint style="warning" %}
-Ce tutoriel vise à présenter comment le contrôle de version peut être facilement implémenté grâce aux outils présents sur le Datalab. Il ne présente pas le fonctionnement de Git et présuppose donc une certaine familiarité avec l'outil. De nombreuses ressources en ligne peuvent servir d'introduction ; l'utilisateur de R pourra par exemple consulter [ce guide](https://linogaliana.gitlab.io/collaboratif/git.html) et l'utilisateur de Python ce [chapitre de cours](https://linogaliana-teaching.netlify.app/course/git/). Une formation complète à Git sera bientôt proposée dans l'[espace formation ](https://www.sspcloud.fr/documentation)du Datalab.
+This tutorial aims to present how version control can be easily implemented using the tools present on the Datalab. It does not present how Git works and therefore presupposes some familiarity with the tool. There are many online resources that can serve as introductions; for example, the R user will be able to [consult this guide](https://linogaliana.gitlab.io/collaboratif/git.html) and the Python user this course chapter. A complete Git training will soon be offered in the Datalab training area.
 {% endhint %}
 
-## Intégration de GitHub avec le Datalab
+## GitHub integration with Datalab&#x20;
 
-### Pourquoi GitHub ?
+### Why GitHub ?
 
-Bien qu'une utilisation hors-ligne de Git soit possible, tout l'intérêt du contrôle de version réside dans la synchronisation de la copie locale d'un projet (_clone_) avec un dépôt distant (_remote_). Différents services de forge logicielle permettent cette synchronisation des projets Git, dont les plus connus sont [GitHub ](https://github.com)et [GitLab](https://about.gitlab.com). Dans la mesure où le premier dispose aujourd'hui de beaucoup plus de visibilité — par exemple, les dépôts de l'Insee, [InseeFr ](https://github.com/InseeFrL)et [InseeFrLab](https://github.com/InseeFrLab), sont sur GitHub — le Datalab propose une intégration facilitée avec GitHub, que nous présentons à travers ce tutoriel.
+Although offline use of Git is possible, the whole point of version control lies in synchronizing the local copy of a project (clone) with a remote repository. Different software forging services allow this synchronization of Git projects, the best known of which are [GitHub ](https://github.com/)and [GitLab](https://about.gitlab.com/). Since the former now has much more visibility — for example, the INSEE repositories, InseeFr and [InseeFrLab](https://github.com/InseeFrLab), are on GitHub — the Datalab offers easy integration with GitHub, which we present through this tutorial.
 
 {% hint style="warning" %}
-La suite du tutoriel nécessite de disposer d'un [compte GitHub](https://github.com/join).
+The rest of the tutorial requires a[ GitHub account](https://github.com/).
 {% endhint %}
 
 {% hint style="info" %}
-Si l'utilisation du Datalab avec la plateforme GitHub est facilitée, elle n'est en aucun cas obligatoire : il reste tout à fait possible d'utiliser la forge logicielle de son choix pour la synchronisation des projets. Une [forge basée sur GitLab ](https://git.lab.sspcloud.fr)est notamment mise à disposition des utilisateurs du Datalab.
+If the use of the Datalab with the GitHub platform is facilitated, it is by no means mandatory: it is still quite possible to use the software forge of your choice for the synchronization of projects. A forge based on GitLab is made available to Datalab users.
 {% endhint %}
 
-### Créer un jeton d'accès (_token_)
+### Create an access token&#x20;
 
-La synchronisation avec un dépôt distant nécessite une authentification auprès de GitHub. Celle-ci s'effectue à l'aide d'un jeton d'accès personnel, qui doit être généré à partir du compte GitHub de l'utilisateur. Le service de génération est accessible à [cette adresse](https://github.com/settings/tokens). La [documentation GitHub ](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)(en Anglais) propose des illustrations pour guider le processus.
+Syncing with a remote repository requires authentication to GitHub. This is done using a personal access token, which must be generated from the user's GitHub account. The build service is available at [this address](https://github.com/settings/tokens). The GitHub [documentation](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens) provides illustrations to guide the process.
 
-Pour générer un jeton, il est nécessaire de choisir un nom de jeton, un délai d'expiration et des droits d'accès (_scope_). Il est recommandé de choisir un délai court (30 jours) et un accès restreint (_repo_ seulement) afin de limiter les risques de sécurité en cas de diffusion malveillante du jeton.&#x20;
+To generate a token, it is necessary to choose a token name, expiration timeout and access rights (scope). It is recommended to choose a short time frame (30 days) and restricted access (repo only) to limit the security risks in case of malicious spread of the token.
 
-![Configuration recommandée pour la génération d'un jeton d'accès GitHub](<../.gitbook/assets/token (1).PNG>)
+![Recommended requirements for generating a GitHub access token](<../.gitbook/assets/token (1).PNG>)
 
-Une fois le jeton généré, ce dernier apparaît à l'écran. Un jeton ne peut être visualisé qu'une seule fois ; en cas de perte, il faudra en générer un nouveau.&#x20;
+Once the token is generated, it appears on the screen. A token can only be viewed once; In case of loss, it will be necessary to generate a new one.
 
-### Ajouter le jeton d'accès au Datalab
+### &#x20;Add the Datalab access token
 
-Il est recommandé d'ajouter ses jetons d'accès à un gestionnaire de mots de passe. Le jeton peut également être ajouté à la configuration "Services externes" du compte utilisateur sur le Datalab, ce qui permet au jeton d'être directement accessible au sein des services proposés sur la plateforme.
+It is recommended that you add your access tokens to a password manager. The token can also be added to the "External Services" configuration of the user account on the Datalab, which allows the token to be directly accessible within the services offered on the platform.
 
-![Ajouter un jeton d'accès GitHub à un compte utilisateur sur le Datalab](<../.gitbook/assets/git (1).PNG>)
+![Add a GitHub access token to a user account on the Datalab](<../.gitbook/assets/git (1).PNG>)
 
 {% hint style="warning" %}
-Attention à bien utiliser dans les "Informations du compte" l'adresse mail associée à votre compte GitHub, c'est elle qui permet de lier effectivement les _commits_ que vous effectuerez à votre compte GitHub.
+Be careful to use in the "Account Information" the email address associated with your GitHub account, it is it that allows you to effectively link the commits you will make to your GitHub account.
 {% endhint %}
 
-## Utiliser Git avec les services du Datalab
+## Using Git with Datalab services&#x20;
 
-Git est préconfiguré pour fonctionner nativement avec les différents services pertinents du Datalab. A l'ouverture d'un service, il est possible de configurer certains éléments. Si l'on a ajouté un jeton d'accès GitHub à son compte sur le Datalab, ce dernier est pré-configuré. Il est par ailleurs possible d'indiquer l'URL **complète** d'un _Repository_ Git (ex : [https://github.com/InseeFrLab/onyxia](https://github.com/InseeFrLab/onyxia)), qui sera alors cloné à l'initialisation dans l'espace de travail de l'instance.
+Git is preconfigured to work natively with the various relevant services of the Datalab. When opening a service, it is possible to configure certain elements. If you have added a GitHub access token to your account on the Datalab, it is pre-configured. It is also possible to specify the full URL of a Git repository (e.g. [https://github.com/InseeFrLab/onyxia](https://github.com/InseeFrLab/onyxia)), which will then be cloned at initialization in the workspace of the instance.
 
-![Configuration de Git à l'ouverture d'un service](../.gitbook/assets/rstudio.PNG)
+![Configuring Git when opening a service](../.gitbook/assets/rstudio.PNG)
 
-### Via le terminal
+### Via the terminal
 
-Le jeton d'accès GitHub est disponible dans le terminal des différents services via la variable d'environnement `$GIT_PERSONAL_ACCESS_TOKEN`. Afin d'éviter de devoir s'authentifier à chaque opération impliquant le dépôt distant (_clone_, _push_ & _pull_), il est recommandé de cloner celui-ci en incluant le jeton d'accès dans le lien HTTPS, à l'aide de la commande suivante :
+The GitHub access token is available in the terminal of the various services via the environment variable`$GIT_PERSONAL_ACCESS_TOKEN`. In order to avoid having to authenticate each operation involving the remote repository (clone, push & pull), it is recommended to clone it by including the access token in the HTTPS link, using the following command:
 
 `git clone https://${GIT_PERSONAL_ACCESS_TOKEN}@github.com/<owner>/<repo>.git`
 
-où \<owner> et \<repo> sont à remplacer respectivement par le nom d'utilisateur et le nom du dépôt GitHub.
+where \<owner> and \<repo>are to be replaced by the username and the name of the GitHub repository respectively.
 
-### Via des interfaces graphiques intégrées
+### Via integrated graphical interfaces
 
-Les principaux services de production de code disponibles sur le Datalab disposent d'une interface graphique pour faciliter l'utilisation de Git :&#x20;
+The main code production services available on the Datalab have a graphical interface to facilitate the use of Git:
 
-* RStudio : RStudio propose une interface graphique pour Git native et assez complète. La [documentation utilitR](https://www.book.utilitr.org/03_fiches_thematiques/fiche_git_utilisation) présente son fonctionnement en détail ;
-* Jupyter : le plugin [jupyterlab-git ](https://github.com/jupyterlab/jupyterlab-git)permet un interfaçage (assez sommaire) de Jupyter avec Git ;
-* VSCode : VSCode propose nativement une interface graphique très bien intégrée avec Git et GitHub. Une [documentation détaillée ](https://code.visualstudio.com/docs/editor/versioncontrol)(en Anglais) présente les possibilités de l'outil.&#x20;
+* RStudio: RStudio offers a graphical interface for native and fairly complete Git. The user [documentation](https://www.book.utilitr.org/03\_fiches\_thematiques/fiche\_git\_utilisation) presents its operation in detail; &#x20;
+* Jupyter: the [jupyterlab-git](https://github.com/jupyterlab/jupyterlab-git) plugin allows a (rather basic) interfacing of Jupyter with Git;&#x20;
+* VSCode: VSCode natively offers a very well integrated graphical interface with Git and GitHub. Detailed [documentation](https://code.visualstudio.com/docs/sourcecontrol/overview) presents the possibilities of the tool.
 
 {% hint style="warning" %}
-Les interfaces graphiques facilitent la prise en main de Git, mais ne remplacent jamais complètement l'usage de l'outil via un terminal du fait d'une intégration nécessairement imparfaite. Il est donc utile de se familiariser avec l'usage de Git via le terminal le plus tôt possible.
+The graphical interfaces facilitate the handling of Git, but never completely replace the use of the tool via a terminal because of a necessarily imperfect integration. It is therefore useful to familiarize yourself with the use of Git via the terminal as soon as possible.
 {% endhint %}
