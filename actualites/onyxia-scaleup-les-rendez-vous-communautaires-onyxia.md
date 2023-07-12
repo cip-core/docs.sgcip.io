@@ -1,41 +1,43 @@
-# Onyxia Scale'Up : Les rendez-vous communautaires Onyxia
+# Onyxia Scale'Up : Onyxia community meetings
+
+
 
 ![](../.gitbook/assets/#ScaleUp.png)
 
-L'équipe du projet Onyxia a le plaisir d'annoncer le lancement des rendez-vous communautaires Onyxia, baptisés **Onyxia Scale'Up**. Ces rendez-vous mensuels se tiendront tous les deuxièmes vendredis de chaque mois de 10h30 à 12h.
+The Onyxia project team is pleased to announce the launch of Onyxia community meetings, baptized **Onyxia Scale'Up**. These monthly meetings will be held every second Friday of each month from 10:30 a.m. to 12 p.m.
 
-### Prochaines dates
+### Upcoming dates
 
-### Modalités de connexion
+### Connection methods
 
-Chaque rendez-vous sera diffusé en ligne sous la forme d'une conférence Zoom. Le lien de connexion sera annoncé à l'avance sur le [canal Tchap SSP Cloud](https://matrix.to/#/#SSPCloudXDpAw6v:agent.finances.tchap.gouv.fr). N'hésitez pas à nous contacter à l'adresse innovation@insee.fr si vous n'avez pas pu vous procurer ce lien.
+Each meeting will be broadcast online in the form of a Zoom conference. The login link will be announced in advance on the [https://www.sspcloud.fr/](https://www.sspcloud.fr/). Do not hesitate to contact us at innovation@insee.fr if you have not been able to obtain this link.
 
-## Replay des rendez-vous passés
+## Replay of past meetings
 
-**#4 : Visualisation de données avec les services d'Onyxia.**\
-10 Juin 2022 - 10h30 à 12h
+**#4 :** Data visualization with Onyxia services**.**\
+Data visualization with Onyxia services
 
 {% embed url="https://minio.lab.sspcloud.fr/projet-onyxia/diffusion/scaleup/20220610-dataviz.mp4" %}
 
-**#3 : Création, déploiement et gestion d'une API.**\
-13 Mai 2022 - 10h30 à 12h
+**#3 :** Creating, deploying and managing an API**.**\
+May 13, 2022 - 10:30 a.m. to 12 p.m.
 
 {% embed url="https://minio.lab.sspcloud.fr/projet-onyxia/diffusion/scaleup/20220513-API_dev_deploy_mgmt.mp4" %}
 
-**#2 : Déployer une application Shiny avec Onyxia.**\
-08 Avril 2022 - 10h30 à 12h
+**#2 :** Deploy a Shiny application with Onyxia**.**\
+April 08, 2022 - 10:30 a.m. to 12 p.m.
 
 {% embed url="https://minio.lab.sspcloud.fr/projet-onyxia/diffusion/scaleup/20220408-shiny_deployment.mp4" %}
 
-**#1 : Suivre et déployer une formation sur Onyxia.**\
-11 Mars 2022 - 10h30 à 12h
+**#1 :** Follow and deploy training on Onyxia**.**\
+March 11, 2022 - 10:30 a.m. to 12 p.m.
 
 {% embed url="https://minio.lab.sspcloud.fr/projet-onyxia/diffusion/scaleup/20220311-formations.mp4" %}
-L'enregistrement de la session #1
+Session recording #1
 {% endembed %}
 
-## Les rendez-vous Onyxia Scale'Up
+## Onyxia Scale'Up meetings
 
-Au-delà des ressources techniques mises à disposition de tous via l'instance SSP Cloud, le projet Onyxia représente une réelle opportunité pour les statisticiens publics de **découvrir et d’adopter de nouvelles méthodes de travail**. Les rendez-vous Onyxia Scale'Up sont l'occasion de partager entre utilisateurs des projets réalisés à partir d'Onyxia. L'objectif est d'illustrer comment la plateforme peut vous permettre de **gagner en liberté** et de **simplifier vos déploiements**.
+Beyond the technical resources made available to everyone via the SSP Cloud instance, the Onyxia project represents a real opportunity for public statisticians to **discover and adopt new ways of working**. The Onyxia Scale'Up meetings are an opportunity to share projects carried out using Onyxia between users. The objective is to illustrate how the platform can allow you to gain freedom and of **simplify your deployments**.
 
-Le format retenu est résolument tourné vers le **retour d'expérience des utilisateurs**. Centré autour d'un sujet donné, chaque rendez-vous sera introduit par un membre du projet Onyxia, qui présentera les possibilités données par la plateforme. Se succèderont ensuite plusieurs utilisateurs, qui tâcheront de transmettre leur expérience de manière complète mais accessible afin de la rendre exploitable par le plus grand nombre.
+The chosen format is resolutely turned towards the  **user feedback**. Centered around a given subject, each meeting will be introduced by a member of the Onyxia project, who will present the possibilities offered by the platform. Then there will be several users, who will try to transmit their experience in a complete but accessible way in order to make it usable by as many people as possible.

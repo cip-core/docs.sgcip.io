@@ -1,13 +1,12 @@
 ---
 description: >-
-  Pratique de développement continu pour le Machine Learning : produire
-  rapidement des projets, automatiser et améliorer la qualité des modèles de
-  production
+  Continuous development practice for Machine Learning: quickly produce
+  projects, automate and improve the quality of production models
 ---
 
-# Introduction au MLOps : Présentation de ML Flow
+# Introduction to MMLOps : Presentation of ML Flow
 
-Au cours de cette session, nous aborderons le sujet du MLOps et plus particulièrement de l'outil ML Flow, disponible sur le [datalab](https://datalab.sspcloud.fr).  Nous échangerons sur les problèmes courants des développeurs d'apprentissage automatique, tels que le suivi des expériences, la reproductibilité, l'outil de déploiement et la gestion des versions de modèle.
+During this session, we will discuss the subject of MLOps and more specifically the ML Flow tool, available on the [datalab](https://datalab.sspcloud.fr). We'll talk about common machine learning developer issues, such as experiment tracking, reproducibility, deployment tool, and model versioning.
 
 {% embed url="https://minio.lab.sspcloud.fr/f7sggu/diffusion/20210422_MLOps_MLflow.mp4" %}
 MLOps et ML Flow
