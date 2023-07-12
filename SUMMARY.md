@@ -24,7 +24,7 @@
 
 ## Documentation de référence
 
-* [Documentation R](docs/documentation-de-reference/documentation-r.md)
+* [R Documentation](docs/documentation-de-reference/documentation-r.md)
 * [Documentation Gitlab](docs/documentation-de-reference/documentation-gitlab.md)
 
 ## Démonstrations

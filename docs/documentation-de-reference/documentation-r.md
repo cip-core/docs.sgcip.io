@@ -1,25 +1,25 @@
 ---
-description: Documentation pour découvrir, apprendre et approfondir R
+description: Documentation to discover, learn and deepen R
 ---
 
-# Documentation R
+# R Documentation
 
-## `utilitR` : une documentation utile pour `R`
+## `utilitR` : useful documentation for R
 
-Documentation collaborative et au code source ouvert faite par des agents de l'**Insee** et du **Système Statistique Public**.
+Collaborative documentation and open source code made by agents of Insee and the **Public Statistical System**.
 
 * [Une documentation principale](https://www.book.utilitr.org)
-* [Un guide des bonnes pratiques en `R` ](https://www.pratiques.utilitr.org)
-* Une version `PDF` sera bientôt mise à disposition.
+* [Un guide des bonnes pratiques en `R`](https://www.pratiques.utilitr.org)
+* A version `PDF` will soon be available.
 
-Le point d'accès principal: [www.utilitr.org](https://www.www.utilitr.org)
+The main access point: [www.utilitr.org](https://www.www.utilitr.org)
 
-## Travail collaboratif avec `R`
+## Collaborative work with R
 
-[La formation](https://linogaliana.gitlab.io/collaboratif/) vise à présenter la manière dont un projet collaboratif peut être mené avec `R` et la manière dont `Rstudio` facilite ce travail. Les compétences acquises au cours de cette formation sont les suivantes:
+[La formation](https://linogaliana.gitlab.io/collaboratif/) aims to present how a collaborative project can be carried out with R and how Rstudio facilitates this work. The skills acquired during this training are as follows:
 
-* Bien utiliser `Rstudio` en utilisant les `Rprojects`
+* Use Rstudio well using Rprojects
 * RMarkdown
-* Bien programmer en `R`
-* Utiliser `Git`
-* Développer des packages
+* Good programming in R
+* To use `Git`
+* Develop packages
