@@ -1,58 +1,54 @@
 ---
-description: Présentation des grands principes du Datalab
+description: Presentation of the main principles of the Datalab
 ---
 
-# Principes du Datalab
+# Principles of Datalab
 
-## Une plateforme de mutualisation
+## A pooling platform
 
-Le projet Onyxia part du constat de difficultés communes rencontrées par les _datascientists_ du secteur public :
+The Onyxia project is based on the observation of common difficulties encountered by data scientists in the public sector: :
 
-* des agents souvent isolés, du fait de la relative rareté des compétences _data_ dans l'administration ;
-* des infrastructures inadaptées, aussi bien en matière de ressources que de technologies, qui constituent un frein à l'innovation ;
-* une difficulté à passer de l'expérimentation à la mise en production, du fait de multiples séparations (séparation physique, langage de développement, modes de travail) entre les directions métier et la production informatique.
+* Agents who are often isolated, due to the relative scarcity of data skills in the administration;
+* Inadequate infrastructure, both in terms of resources and technology, which hinders innovation;
+* Difficulty in moving from experimentation to production, due to multiple separations (physical separation, development language, working methods) between business departments and IT production
 
-Face à ce constat, le Datalab SSPCloud a été construit pour proposer une plateforme de mutualisation à plusieurs niveaux :&#x20;
+Faced with this situation, the SSPCloud Datalab was built to offer a multi-level pooling platform: :
 
-* partage d'une _infrastructure_ moderne, centrée autour du déploiement de services via des conteneurs, et dimensionnée pour les usages de _data science ;_
-* partage de _méthodes_, via une mutualisation des services de _data science_ proposés, auxquels chacun peut contribuer ;
-* partage de _connaissances_, via des formations associées au Datalab ainsi que la constitution de commaunautés d'entraide centrées sur son utilisation.
+* Sharing a modern infrastructure, centered around the deployment of services via containers, and sized for data science uses; _;_
+* Sharing of methods, through the pooling of proposed data science services, to which everyone can contribute; ;
+* Knowledge sharing, through training associated with the Datalab as well as the constitution of mutual aid communities focused on its use.
 
 {% hint style="info" %}
-Onyxia, Datalab SSP Cloud : quelles différences ?
-
-
-
-[Onyxia ](https://github.com/InseeFrLab/onyxia.git)est un projet open-source qui propose une plateforme de services de _data science_, accessible via une application Web. Le [Datalab SSP Cloud ](https://datalab.sspcloud.fr/home)est une instance du projet Onyxia, hébergée à l'Insee.
+Onyxia, Datalab SSP Cloud: what are the differences? [Onyxia](https://github.com/InseeFrLab/onyxia) is an open-source project that offers a platform of data science services, accessible via a web application. The [Datalab SSP Cloud](https://onyxia.euw1.prod.sgcip.io/home) is an instance of the Onyxia project, hosted at INSEE.
 {% endhint %}
 
-## Principes fondamentaux
+## Principle fundamentals
 
-L'architecture du Datalab est basée sur un ensemble de principes fondamentaux :&#x20;
+The architecture of the Datalab is based on a set of fundamental principles:
 
-* une production orientée _data science_, en proposant une infrastructure dimensionnée à la plupart des usages et un catalogue de services couvrant l'ensemble du cycle de vie des projets _data_ ;
-* des choix qui favorisent l'autonomie des usagers, en évitant tout enfermement propriétaire et en permettant l'accès aux couches basses de l'infrastructure pour couvrir les besoins avancés et spécifiques ;
-* un projet 100% _cloud_-natif, mais également _cloud_-agnostique, permettant un déploiement simple sur n'importe quelle infrastructure ;
-* un projet complètement open-source, à la fois du point de vue de ses briques constitutives que de sa diffusion (licence MIT).
+* Data-science-oriented production, by offering an infrastructure sized for most uses and a catalogue of services covering the entire life cycle of data projects;
+* Choices that promote the autonomy of users, avoiding any proprietary confinement and allowing access to the lower layers of the infrastructure to cover advanced and specific needs;
+* A 100% cloud-native, but also cloud-agnostic project, allowing simple deployment on any infrastructure;
+* A completely open-source project, both from the point of view of its constituent bricks and its distribution (MIT license).
 
-## Offre de services
+## Services offered
 
-Le Datalab est accessible via une [interface utilisateur](https://datalab.sspcloud.fr/home) moderne et réactive, centrée sur l'expérience utilisateur. Celle-ci constitue le liant technique entre les différentes composantes d'Onyxia :&#x20;
+&#x20;The Datalab is accessible through a modern and responsive [user interface](https://onyxia.euw1.prod.sgcip.io/home), focused on the user experience. This constitutes the technical link between the different components of Onyxia:
 
-* des technologies open-source qui constituent l'état de l'art du déploiement et de l'orchestration de conteneurs, du stockage et de la sécurité ;
-* un catalogue de services et d'outils pour accompagner les projets de _data science ;_
-* une plateforme de formation et de documentation pour faciliter l'_onboarding_ sur les technologies proposées.
+* Open-source technologies that are the state of the art in container deployment and orchestration, storage, and security;
+* A catalogue of services and tools to support data science projects;
+* A training and documentation platform to facilitate onboarding on the proposed technologies.
 
-![Briques fondamentales du Datalab Onyxia](<../../.gitbook/assets/Screenshot from 2021-11-12 21-25-15.png>)
+![Fundamental components of the Onyxia Datalab](<../../.gitbook/assets/Screenshot from 2021-11-12 21-25-15.png>)
 
-Le catalogue de services est pensé de manière à accomoder l'essentiel des usages des _data scientists_, du développement en _self-service_ à la mise en production de traitements ou d'application. L'ensemble du cycle de vie d'un projet _data_ est ainsi couvert, et le catalogue des services est régulièrement étendu pour répondre aux nouveaux besoins des utilisateurs.
+The catalog of services is designed to accommodate most of the uses of data scientists, from self-service development to the production of processing or applications. The entire life cycle of a data project is thus covered, and the catalog of services is regularly extended to meet the new needs of users.
 
-![Un catalogue de services complet pour les projets de data science](<../../.gitbook/assets/Screenshot from 2021-11-12 21-25-27.png>)
+![A comprehensive service catalog for data science projects](<../../.gitbook/assets/Screenshot from 2021-11-12 21-25-27.png>)
 
-## Un projet ouvert
+## &#x20;An open project
 
-Le projet du Datalab Onyxia est résolument ouvert, à de multiples niveaux :&#x20;
+The Onyxia Datalab project is resolutely open, on multiple levels:
 
-* le Datalab est accessible via son [interface Web](https://datalab.sspcloud.fr) à tous les agents du service public (via _AgentConnect_ ou une adresse mail en gouv.fr) ainsi qu'aux élèves des écoles de statistique liées à l'Insee (Cefil, Ensai, Ensae) ;
-* le code source ouvert et la modularité du projet rendent possible le déploiement d'une instance Onyxia personnalisée sur n'importe quelle infrastructure basée sur un _cluster_ Kubernetes ;
-* le projet est ouvert aux contributions extérieures, qu'elles concernent le catalogue des services, l'interface graphique ou l'agencement des briques logicielles qui le constituent.
+* The Datalab is accessible via its [Web interface](https://onyxia.euw1.prod.sgcip.io/home) to all public service employees (via AgentConnect or an email address in gouv.fr) as well as to students of statistics schools linked to INSEE (Cefil, Ensai, Ensae);
+* The open source code and modularity of the project make it possible to deploy a custom Onyxia instance on any Kubernetes cluster-based infrastructure;
+* The project is open to external contributions, whether they concern the catalogue of services, the graphical interface or the arrangement of the software bricks that constitute it.
