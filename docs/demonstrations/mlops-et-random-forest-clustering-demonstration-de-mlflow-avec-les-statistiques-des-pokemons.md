@@ -1,7 +1,7 @@
 ---
 description: >-
-  Utiliser MLFlow et les pokémons pour découvrir le MLOps et automatiser puis
-  améliorer la qualité des modèles de production.
+  Use MLFlow and pokemons to discover MLOps and automate and improve the quality
+  of production models.
 ---
 
 # MLOps and Random Forest Clustering: Demonstration of MLFlow with Pokémon statistics
@@ -30,27 +30,27 @@ For each trained model, one can track the importance of the Pokémons characteri
 
 ![Figure 2 - Model comparison](https://minio.lab.sspcloud.fr/pengfei/diffusion/pokemon/pokemon\_mdoel\_camparing.PNG)
 
-**Déploiement de modèle**
+**Model deployment**
 
-Pour déployer un modèle, nous devons définir la version et l'état du modèle, et l'application de déploiement peut récupérer le modèle approprié en fonction de ces informations.
+To deploy a model, we need to set the version and state of the model, and the deploying application can retrieve the appropriate model based on this information..
 
 ![Figure 3 - Model deployment](https://minio.lab.sspcloud.fr/pengfei/diffusion/pokemon/model\_version.PNG)
 
-Dans l'exemple, notre modèle a quatre versions : une en production, une en développement et deux en archive.
+In the example, our model has four versions: one in production, one in development and two in archive.
 
-#### Service de gestion des données au sein de Datalab
+**Data management service within Datalab**
 
-Chaque année, la société Pokémon publie de nouveaux types de Pokémons. Chaque version est appelée une génération. Jusqu'à présent, nous avons sept générations. En conséquence, les données brutes de Pokémons sont divisées en différents fichiers pour chaque génération. Dans de nombreux cas, ceux qui collectent et téléchargent les données ne sont pas ceux qui les utilisent pour entraîner le modèle. Par conséquent, c'est un nouveau défi de trouver les données appropriées pour entraîner votre modèle. Heureusement, le datalab nous fournit un service de gestion de données appelé Atlas qui nous permet de trouver des données facilement.
+Every year, the Pokémon Company releases new types of Pokémon. Each version is called a generation. So far we have seven generations. Accordingly, the raw data of Pokémons is divided into different files for each generation. In many cases, the people collecting and downloading the data are not the people using it to train the model. Therefore, it is a new challenge to find the appropriate data to train your model. Fortunately, the datalab provides us with a data management service called Atlas that allows us to find data easily.
 
 We can search data by their name, type, owner, etc. Figure-4 shows an example of full text search.
 
-Nous pouvons rechercher des données par leur nom, type, propriétaire, etc.
+We can search for data by its name, type, owner, etc..
 
-![Figure 4 - Exemple de recherche textuelle (Atlas)](https://minio.lab.sspcloud.fr/pengfei/diffusion/pokemon/atlas\_search\_by\_text.PNG)
+![Figure 4 -Text search example (Atlas)](https://minio.lab.sspcloud.fr/pengfei/diffusion/pokemon/atlas\_search\_by\_text.PNG)
 
-Si le gestionnaire de données a configuré les métadonnées de classification, nous pouvons même rechercher des données par génération de Pokémons.
+If the data manager has configured the classification metadata, we can even search data by generation of Pokemons.
 
-![Figure 5 - Exemple de recherche par génération de pokémons (Atlas)](https://minio.lab.sspcloud.fr/pengfei/diffusion/pokemon/atlas\_search\_by\_class.png)
+![Figure 5 -Example of search by pokemon generation (Atlas)](https://minio.lab.sspcloud.fr/pengfei/diffusion/pokemon/atlas\_search\_by\_class.png)
 
 After finding the data, we can access all the related metadata such as name, location, owner, size, creation date, etc..
 
