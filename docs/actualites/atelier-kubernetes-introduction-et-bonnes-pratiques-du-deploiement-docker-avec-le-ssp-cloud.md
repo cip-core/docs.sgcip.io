@@ -1,12 +1,9 @@
 ---
 description: >-
-  Environnement de développement cloud, la publication d'une application
-  (package ou image docker) et le lancement une application sur un cluster.
+  Cloud development environment, publishing an application (package or docker
+  image) and launching an application on a cluster.
 ---
 
-# Atelier Kubernetes : Introduction et bonnes pratiques du déploiement Docker avec le SSP Cloud
-
-
+# Kubernetes Lab: Introduction and Best Practices for Docker Deployment with Cloud SSP
 
 {% embed url="https://minio.lab.sspcloud.fr/f7sggu/diffusion/2021-04-06_SSPCloud_atelier-bonnes-pratiques-docker-deploiement-kubernetes.mp4" %}
-

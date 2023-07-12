@@ -1,10 +1,9 @@
 ---
 description: >-
-  Découvrir l'écosystème du système d'information du datalab, connaître la
-  couverture fonctionnelle du SSP Cloud et en savoir plus sur les axes de
-  travail du datalab.
+  Discover the ecosystem of the datalab information system, know the functional
+  coverage of the Cloud SSP and learn more about the data lab's work axes.
 ---
 
-# SPP Cloud : Webinaire de lancement
+# SPP Cloud : Launch Webinar
 
 {% embed url="https://minio.lab.sspcloud.fr/f7sggu/diffusion/20201105-sspcloud.mp4" %}
