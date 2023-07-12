@@ -16,7 +16,7 @@
 
 ## Comment contribuer ? <a href="#comment-contribuer-1" id="comment-contribuer-1"></a>
 
-* [🤝 Comment contribuer à la communauté?](docs/comment-contribuer-1/comment-contribuer/README.md)
+* [🤝 How to contribute to the community?](docs/comment-contribuer-1/comment-contribuer/README.md)
   * [​📄 Écrire du contenu documentaire avec Gitbook](docs/comment-contribuer-1/comment-contribuer/comment-utiliser-et-editer-gitbook-pour-la-documentation.md)
   * [​🕹️​ Proposer une formation interactive grâce à Onyxia](docs/comment-contribuer-1/comment-contribuer/proposer-une-formation-interactive-grace-a-onyxia.md)
   * [🔍 Référencer son contenu sur le site sspcloud.fr](docs/comment-contribuer-1/comment-contribuer/referencer-son-contenu-sur-le-site-sspcloud.fr.md)
@@ -29,7 +29,7 @@
 
 ## Démonstrations
 
-* [MLOps and Random Forest Clustering: Demonstration of MLFlow with Pokémon statistics](docs/demonstrations/mlops-et-random-forest-clustering-demonstration-de-mlflow-avec-les-statistiques-des-pokemons.md)
+* [MLOps and Random Forest Clustering: Demonstration of MLFlow with Pokemon statistics](docs/demonstrations/mlops-et-random-forest-clustering-demonstration-de-mlflow-avec-les-statistiques-des-pokemons.md)
 
 ## Actualités
 

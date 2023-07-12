@@ -8,7 +8,7 @@ description: Documentation to discover, learn and deepen R
 
 Collaborative documentation and open source code made by agents of Insee and the **Public Statistical System**.
 
-* [Une documentation principale](https://www.book.utilitr.org)
+* [Une documentation file](https://www.book.utilitr.org/)
 * [Un guide des bonnes pratiques en `R`](https://www.pratiques.utilitr.org)
 * A version `PDF` will soon be available.
 
