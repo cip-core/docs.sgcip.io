@@ -1,55 +1,53 @@
 ---
-description: >-
-  Tutoriel pour utiliser des secrets comme variables d’environnement dans les
-  services du Datalab.
+description: Tutorial to use secrets as environment variables in Datalab services.
 ---
 
-# Gestion des secrets
+# Secrets Management
 
-### Les variables d'environnement&#x20;
+### Environment variables
 
-Il arrive que certaines informations doivent être mise à disposition d'un grand nombre d'applications, ou ne doivent pas figurer en clair dans votre code (jetons d'accès, mots de passe, etc.). L'utilisation de **variables d'environnement** permet de pouvoir accéder à ces informations depuis n'importe quel service.
+Sometimes some information needs to be made available to a large number of applications, or it doesn't have to be in plain text in your code (access tokens, passwords, etc.). The use of environment variables makes it possible to access this information from any service.
 
-Au lancement d'un service, plusieurs variables d'environnement sont déjà injectées automatiquement — par exemple, les tokens d'accès à [GitHub ](controle-de-version.md)et [MinIO](stockage-de-donnees.md).
+When a service is launched, several environment variables are already injected automatically — for example, [GitHub ](../docs/onyxia-guide/projet-de-demonstration-r-avec-onyxia.md)and [MinIO](http://localhost:5000/o/PJE4wAHZSTsTbfQZzqlZ/s/zGooQhLS0mJUxkbJDe0X/) access tokens.&#x20;
 
 ![](../.gitbook/assets/secret.png)
 
-### Création et gestion de secrets
+### Creating and managing secrets&#x20;
 
-Sur la plateforme, les variables d'environnement sont des secrets écrits dans [Vault](https://www.vaultproject.io) (le coffre fort du Datalab) et sont chiffrées. Cela vous permet d'y stocker des jetons, des identifiants et des mots de passe. La page [Mes secrets](https://datalab.sspcloud.fr/my-secrets/) prends la forme d'un explorateur de fichiers où vous pouvez trier et hiérarchiser vos variables dans des dossiers.
+On the platform, environment variables are secrets written to [Vault](https://www.vaultproject.io/) (the Datalab vault) and are encrypted. This allows you to store tokens, logins and passwords there. The [My Secrets](https://onyxia.euw1.prod.sgcip.io/my-secrets) page takes the form of a file explorer where you can sort and prioritize your variables into folders.
 
-#### Pour commencer :
+#### First :
 
-* Créez un nouveau dossier `+ Nouveau dossier`
-* Puis dans ce dossier, créez un nouveau secret `+ Nouveau secret`
-* Ouvrez votre secret&#x20;
+* Create a new folder&#x20;
+* Then in this folder, create a new secret
+* Open your secret
 
 ![](../.gitbook/assets/toolbarsecret.png)
 
-Chaque secret peut contenir plusieurs variables, composés de paires de clés-valeurs.
+Each secret can contain several variables, composed of key-value pairs.
 
-* &#x20;`+ Ajouter une variable`
+* `+ Add a variable`
 
 ![](../.gitbook/assets/secrettable.png)
 
 {% hint style="info" %}
-Les clés (nom de la variable) commencent toujours par`$`et contiennent uniquement des lettres, des chiffres et le caractère de soulignement (`_`). Par convention, les clefs s'écrivent en MAJUSCULE.
+Keys (variable name) always start with $and contain only letters, numbers, and the underscore character (\_). By convention, keys are written in UPPERCASE.
 {% endhint %}
 
-* &#x20;Remplissez le champ du nom de la clef puis sa valeur.
+* Fill in the key name field and then its value.
 
-### Convertir des secrets en variables d'environnement
+### Convert secrets to environment variables&#x20;
 
-Une fois votre secret édité, avec ses différentes variables, vous êtes prêt à l'utiliser dans votre service.&#x20;
+Once your secret is edited, with its different variables, you are ready to use it in your service.
 
-* Copiez le chemin du secret en cliquant sur le bouton `Utiliser dans un service`
-* Puis au moment de la configuration de votre service, allez dans l'onglet `Vault`et collez le chemin du secret dans le champ dédié
+* Copy the secret path by clicking the `Use in service button`
+* PThen when configuring your service, go to the Vault tab and paste the path of the secret into the dedicated field
 
 ![](../.gitbook/assets/servicesconfig.png)
 
-* Créez et ouvrez votre service
+* Create and open your service
 
-Pour vérifier que vos variables d'environnement ont bien été crées, vous pouvez lancer les commandes suivantes dans le terminal du service :
+To verify that your environment variables have been created, you can run the following commands in the service terminal:
 
 ```bash
 # Lister toutes les variables d'environnement disponibles
