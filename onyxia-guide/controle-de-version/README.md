@@ -44,7 +44,7 @@ Syncing with a remote repository requires authentication to GitHub. This is done
 
 To generate a token, it is necessary to choose a token name, expiration timeout and access rights (scope). It is recommended to choose a short time frame (30 days) and restricted access (repo only) to limit the security risks in case of malicious spread of the token.
 
-![Recommended requirements for generating a GitHub access token](<../.gitbook/assets/token (1).PNG>)
+![Recommended requirements for generating a GitHub access token](<../../.gitbook/assets/token (1).PNG>)
 
 Once the token is generated, it appears on the screen. A token can only be viewed once; In case of loss, it will be necessary to generate a new one.
 
@@ -52,7 +52,7 @@ Once the token is generated, it appears on the screen. A token can only be viewe
 
 It is recommended that you add your access tokens to a password manager. The token can also be added to the "External Services" configuration of the user account on the Datalab, which allows the token to be directly accessible within the services offered on the platform.
 
-![Add a GitHub access token to a user account on the Datalab](<../.gitbook/assets/git (1).PNG>)
+![Add a GitHub access token to a user account on the Datalab](<../../.gitbook/assets/git (1).PNG>)
 
 {% hint style="warning" %}
 Be careful to use in the "Account Information" the email address associated with your GitHub account, it is it that allows you to effectively link the commits you will make to your GitHub account.
@@ -62,7 +62,7 @@ Be careful to use in the "Account Information" the email address associated with
 
 Git is preconfigured to work natively with the various relevant services of the Datalab. When opening a service, it is possible to configure certain elements. If you have added a GitHub access token to your account on the Datalab, it is pre-configured. It is also possible to specify the full URL of a Git repository (e.g. [https://github.com/InseeFrLab/onyxia](https://github.com/InseeFrLab/onyxia)), which will then be cloned at initialization in the workspace of the instance.
 
-![Configuring Git when opening a service](../.gitbook/assets/rstudio.PNG)
+![Configuring Git when opening a service](../../.gitbook/assets/rstudio.PNG)
 
 ### Via the terminal
 

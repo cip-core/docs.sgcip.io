@@ -33,7 +33,7 @@ Clicking on a file in your personal bucket takes you to its features page. On it
 To simplify the playback of several files – as part of a training for example – it is possible to create a "distribution" folder in your personal bucket. By default, all files in this folder have a public broadcast status.&#x20;
 
 {% hint style="info" %}
-In the context of collaborative projects, it may be interesting for the different participants to have access to a common storage space. It is possible for this purpose to create shared buckets on MinIO. Do not hesitate to contact us via the channels specified on the ["First use" ](premiere-utilisation.md)page if you wish to port open-data projects to the Datalab.
+In the context of collaborative projects, it may be interesting for the different participants to have access to a common storage space. It is possible for this purpose to create shared buckets on MinIO. Do not hesitate to contact us via the channels specified on the ["First use" ](../premiere-utilisation.md)page if you wish to port open-data projects to the Datalab.
 {% endhint %}
 
 {% hint style="warning" %}
@@ -42,7 +42,7 @@ In accordance with the terms of use, only open data or non-sensitive data may be
 
 ## Work with data in a service&#x20;
 
-The access credentials needed to access data on MinIO are pre-configured in the various services of the Datalab, accessible in the form of [environment variables.](gestion-des-secrets.md) Thus, importing and exporting files from services is greatly facilitated.
+The access credentials needed to access data on MinIO are pre-configured in the various services of the Datalab, accessible in the form of [environment variables.](../gestion-des-secrets.md) Thus, importing and exporting files from services is greatly facilitated.
 
 {% hint style="warning" %}
 Access to MinIO storage is possible via a personal token, valid for 7 days, and automatically regenerated at regular intervals on the Cloud SSP. When a token has expired, services created before the expiration date (with the previous token) can no longer access storage; The service in question will then appear marked in red on the [My Services](https://onyxia.euw1.prod.sgcip.io/my-services) page. It is therefore essential to regularly renew the services that are running, taking care to back up your code and data beforehand.

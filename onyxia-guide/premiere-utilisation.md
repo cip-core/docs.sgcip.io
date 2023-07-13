@@ -46,7 +46,7 @@ Once the service is launched, an Open button appears that allows access to the s
 Removing an instance from a service is done simply by clicking the trash can icon below the instance.
 
 {% hint style="danger" %}
-For some services, deleting an instance deletes all associated data, and this action is irretrievable. It is therefore necessary to always read the README associated with the instance, which specifies the consequences of deleting the instance. In general, it is very important to ensure that the data and code used are backed up before deleting the instance. The ideal is to[ version your code with Git](controle-de-version.md) and perform regular data backups using the[ S3 storage system.](stockage-de-donnees.md)
+For some services, deleting an instance deletes all associated data, and this action is irretrievable. It is therefore necessary to always read the README associated with the instance, which specifies the consequences of deleting the instance. In general, it is very important to ensure that the data and code used are backed up before deleting the instance. The ideal is to[ version your code with Git](controle-de-version/) and perform regular data backups using the[ S3 storage system.](controle-de-version/stockage-de-donnees.md)
 {% endhint %}
 
 {% hint style="danger" %}
@@ -57,8 +57,8 @@ The resources made available for the execution of the services are shared betwee
 
 We wanted to present through this tutorial the standard use of the services offered on the Datalab. More advanced uses are presented in other pages of this documentary site:
 
-* [version your code with Git](controle-de-version.md)&#x20;
-* [store your data with MinIO ](stockage-de-donnees.md)
+* [version your code with Git](controle-de-version/)&#x20;
+* [store your data with MinIO ](controle-de-version/stockage-de-donnees.md)
 * [manage your secrets with Vault ](gestion-des-secrets.md)
 * Work on collaborative projects
 * self-training with the Datalab&#x20;
