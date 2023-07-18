@@ -4,7 +4,7 @@ description: >-
   of production models.
 ---
 
-# MLOps and Random Forest Clustering: Demonstration of MLFlow with Pokémon statistics
+# MLOps and Random Forest Clustering: Demonstration of MLFlow with Pokemon statistics
 
 ## The demonstration in a few words
 
@@ -56,21 +56,4 @@ After finding the data, we can access all the related metadata such as name, loc
 
 ![Figure 6 -Example of metadata for the Pokémon dataset (Atlas)](https://minio.lab.sspcloud.fr/pengfei/diffusion/pokemon/atlas\_data\_detail.PNG)
 
-## Useful links (Data and model)
-
-The full cleansed dataset is available here:
-
-{% embed url="https://minio.lab.sspcloud.fr/pengfei/mlflow-demo/pokemon-cleaned.csv" %}
-
-Source codes on how to train, track and deploy the model are available here :
-
-{% embed url="https://github.com/pengfei99/mlflow-pokemon-example.git" %}
-
-To use the most recently deployed model, you can use the following curl command to query our web service :
-
-```
-curl -X POST -H "Content-Type:application/json; format=pandas-split" --data \
-'{"columns":["hp","attack","defense","special_attack","special_defense","speed"],"index":[272,293,414,263,49],
-"data":[[80,70,70,90,100,70],[64,51,23,51,23,28],[70,94,50,94,50,66],[38,30,41,30,41,60],[70,65,60,90,75,90]]}' \
-https://pokemon.lab.sspcloud.fr/invocations ;
-```
+##

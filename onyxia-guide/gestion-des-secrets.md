@@ -8,9 +8,9 @@ description: Tutorial to use secrets as environment variables in Datalab service
 
 Sometimes some information needs to be made available to a large number of applications, or it doesn't have to be in plain text in your code (access tokens, passwords, etc.). The use of environment variables makes it possible to access this information from any service.
 
-When a service is launched, several environment variables are already injected automatically — for example, [GitHub ](../docs/onyxia-guide/projet-de-demonstration-r-avec-onyxia.md)and [MinIO](http://localhost:5000/o/PJE4wAHZSTsTbfQZzqlZ/s/zGooQhLS0mJUxkbJDe0X/) access tokens.&#x20;
+When a service is launched, several environment variables are already injected automatically — for example, [GitHub ](../docs/onyxia-guide/projet-de-demonstration-r-avec-onyxia.md)and [MinIO](http://127.0.0.1:5000/o/PJE4wAHZSTsTbfQZzqlZ/s/zGooQhLS0mJUxkbJDe0X/) access tokens.&#x20;
 
-![](../.gitbook/assets/secret.png)
+![](<../.gitbook/assets/Screenshot (31).png>)
 
 ### Creating and managing secrets&#x20;
 

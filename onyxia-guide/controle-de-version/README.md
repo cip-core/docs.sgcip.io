@@ -52,7 +52,7 @@ Once the token is generated, it appears on the screen. A token can only be viewe
 
 It is recommended that you add your access tokens to a password manager. The token can also be added to the "External Services" configuration of the user account on the Datalab, which allows the token to be directly accessible within the services offered on the platform.
 
-![Add a GitHub access token to a user account on the Datalab](<../../.gitbook/assets/git (1).PNG>)
+![Add a GitHub access token to a user account on the Datalab](<../../.gitbook/assets/Screenshot (29).png>)
 
 {% hint style="warning" %}
 Be careful to use in the "Account Information" the email address associated with your GitHub account, it is it that allows you to effectively link the commits you will make to your GitHub account.

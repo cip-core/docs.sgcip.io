@@ -19,7 +19,7 @@ Next, go to the Onyxia [service catalog](https://onyxia.euw1.prod.sgcip.io/catal
 
 ![Configure a Jupyter Service - Initialization Script](../../../.gitbook/assets/frame-59.png)
 
-You can then copy the link by clicking on the icon at the top right and keep it to allow direct access to your training. Now make your tutorial visible and accessible within the Cloud SSP community:
+You can then copy the link by clicking on the icon at the top right and keep it to allow direct access to your training. Now make your tutorial visible and accessible within the Cloud SGCIP community:
 
 {% content-ref url="referencer-son-contenu-sur-le-site-sspcloud.fr.md" %}
 [referencer-son-contenu-sur-le-site-sspcloud.fr.md](referencer-son-contenu-sur-le-site-sspcloud.fr.md)
@@ -35,7 +35,7 @@ Then, go to the Onyxia[ service catalog](https://onyxia.euw1.prod.sgcip.io/catal
 
 ![Configure an Rstudio Service - Initialization Script](../../../.gitbook/assets/frame-60.png)
 
-You can then copy the link by clicking on the icon at the top right and keep it to allow direct access to your training. Now make your tutorial visible and accessible within the Cloud SSP community:
+You can then copy the link by clicking on the icon at the top right and keep it to allow direct access to your training. Now make your tutorial visible and accessible within the Cloud SGCIP community:
 
 {% content-ref url="referencer-son-contenu-sur-le-site-sspcloud.fr.md" %}
 [referencer-son-contenu-sur-le-site-sspcloud.fr.md](referencer-son-contenu-sur-le-site-sspcloud.fr.md)

@@ -45,12 +45,12 @@ In accordance with the terms of use, only open data or non-sensitive data may be
 The access credentials needed to access data on MinIO are pre-configured in the various services of the Datalab, accessible in the form of [environment variables.](../gestion-des-secrets.md) Thus, importing and exporting files from services is greatly facilitated.
 
 {% hint style="warning" %}
-Access to MinIO storage is possible via a personal token, valid for 7 days, and automatically regenerated at regular intervals on the Cloud SSP. When a token has expired, services created before the expiration date (with the previous token) can no longer access storage; The service in question will then appear marked in red on the [My Services](https://onyxia.euw1.prod.sgcip.io/my-services) page. It is therefore essential to regularly renew the services that are running, taking care to back up your code and data beforehand.
+Access to MinIO storage is possible via a personal token, valid for 7 days, and automatically regenerated at regular intervals on the Cloud SGCIP. When a token has expired, services created before the expiration date (with the previous token) can no longer access storage; The service in question will then appear marked in red on the [My Services](https://onyxia.euw1.prod.sgcip.io/my-services) page. It is therefore essential to regularly renew the services that are running, taking care to back up your code and data beforehand.
 {% endhint %}
 
 ### With R Studio
 
-The section of the [user documentation ](https://www.book.utilitr.org/)dedicated to the use of RStudio on the Cloud SSP environment presents in detail how to list the files of a bucket, import and export data using the library `aws.s3` from R.
+The section of the [user documentation ](https://www.book.utilitr.org/)dedicated to the use of RStudio on the Cloud SGCIP environment presents in detail how to list the files of a bucket, import and export data using the library `aws.s3` from R.
 
 ### In Python (with Jupyter or VSCode)
 
