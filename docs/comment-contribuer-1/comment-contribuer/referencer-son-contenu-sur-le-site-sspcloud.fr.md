@@ -1,8 +1,8 @@
 ---
-description: How to reference its content on the sspcloud.fr site?
+description: How to reference its content on the SGCIP datalab site?
 ---
 
-# 🔍 Référencer son Referencing its content on the sspcloud.fr site
+# 🔍 Referencing its content on the SGCIP site
 
 ## 🎓 Referencing a training
 

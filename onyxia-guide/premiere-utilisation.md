@@ -14,7 +14,7 @@ Welcome to the Datalab Onyxia, a shared self-service data processing platform fo
 
 The [service catalog](https://onyxia.euw1.prod.sgcip.io/catalog/cip) is at the center of the use of the Datalab. It offers a set of services for statistical data processing as well as the complete management of data science projects.
 
-![](../.gitbook/assets/catalogue.png)
+![](<../.gitbook/assets/Screenshot (30).png>)
 
 ### Start a service
 

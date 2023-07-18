@@ -12,14 +12,14 @@ The Onyxia project is based on the observation of common difficulties encountere
 * Inadequate infrastructure, both in terms of resources and technology, which hinders innovation;
 * Difficulty in moving from experimentation to production, due to multiple separations (physical separation, development language, working methods) between business departments and IT production
 
-Faced with this situation, the SSPCloud Datalab was built to offer a multi-level pooling platform: :
+Faced with this situation, the SGCIP Datalab was built to offer a multi-level pooling platform: :
 
 * Sharing a modern infrastructure, centered around the deployment of services via containers, and sized for data science uses; _;_
 * Sharing of methods, through the pooling of proposed data science services, to which everyone can contribute; ;
 * Knowledge sharing, through training associated with the Datalab as well as the constitution of mutual aid communities focused on its use.
 
 {% hint style="info" %}
-Onyxia, Datalab SSP Cloud: what are the differences? [Onyxia](https://github.com/InseeFrLab/onyxia) is an open-source project that offers a platform of data science services, accessible via a web application. The [Datalab SSP Cloud](https://onyxia.euw1.prod.sgcip.io/home) is an instance of the Onyxia project, hosted at INSEE.
+Onyxia, Datalab SGCIP Datalab: what are the differences? [Onyxia](https://github.com/InseeFrLab/onyxia) is an open-source project that offers a platform of data science services, accessible via a web application. The [SGCIP Datalab ](https://onyxia.euw1.prod.sgcip.io/home) is an instance of the Onyxia project, hosted at INSEE.
 {% endhint %}
 
 ## Principle fundamentals

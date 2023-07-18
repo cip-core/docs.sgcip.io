@@ -6,9 +6,9 @@ description: To modify or propose content (Projects, tutorials, examples, etc.)
 
 ## 🤝 Why contribute?
 
-* You wish[ écrire un tutoriel, une actualités, présenter un projet réalisé](comment-utiliser-et-editer-gitbook-pour-la-documentation.md) Or just a few snippets of code?
+* Would you like to write a [tutorial, a news, present a project](comment-utiliser-et-editer-gitbook-pour-la-documentation.md) realized Or just a few snippets of code?
 * Do you want to update or correct content on this guide?
-* You wish [participer au contenu du catalogue de services](comment-contribuer-au-catalogue-de-service.md) ?
+* Would you like to participate in the content of the [service catalog](comment-contribuer-au-catalogue-de-service.md)?
 * You want to give feedback on the datalab ?
 
 ## 🚩 The organization of documentation

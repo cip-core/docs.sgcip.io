@@ -14,13 +14,11 @@ To recognize the service and/or configuration if you register it by clicking on 
 
 It is possible to share a service to a group of people by checking the "Share service" box when opening the service. Other members of the group will see the service and will be able to use it. The creation of groups is done by writing to the administrators on Tchap (privately) or by email to the address innovation@insee.fr, communicating the group name, the usernames of the members, the need or not for an associated storage space on MinIO.
 
-{% hint style="info" %}
-For a one-time need, it is also possible to share a service that has been created with another person. All you have to do is give him the URL (type https://user-aaaaaaaaaaaaaa-xxxxxxx-x.user.lab.sspcloud.fr/), as well as the password of the service. The username remains Onyxia. Attention, it is recommended to change the password of the service when it is launched (Security tab) so as not to leak it. You will also need to uncheck Enable IP protection and Enable network policy in the Security tab. Only one person at a time can connect to an RStudio service.
-{% endhint %}
+
 
 ## S3
 
-This concerns the S3 storage space. To learn how to use this tab, see the [dedicated page.](http://localhost:5000/o/PJE4wAHZSTsTbfQZzqlZ/s/zGooQhLS0mJUxkbJDe0X/)
+This concerns the S3 storage space. To learn how to use this tab, see the [dedicated page.](http://127.0.0.1:5000/o/PJE4wAHZSTsTbfQZzqlZ/s/zGooQhLS0mJUxkbJDe0X/)
 
 ## Kubernetes
 
@@ -29,8 +27,6 @@ This concerns the S3 storage space. To learn how to use this tab, see the [dedic
 ### PersonalInit
 
 A link to a shell script (linux command chain) that is executed right after the service is launched. Convenient to automate the implementation of certain configurations.
-
-This link to the script must be accessible on the internet, for example on https://git.lab.sspcloud.fr/ with a public project or on [S3 storage](https://app.gitbook.com/o/PJE4wAHZSTsTbfQZzqlZ/s/zGooQhLS0mJUxkbJDe0X/\~/changes/8/onyxia-guide/controle-de-version/stockage-de-donnees) with a public file.&#x20;
 
 Sample initialization script that clones a project from a private Gitlab instance, configures RStudio global options, automatically opens the cloned RStudio project, installs and selects French spell checking, customizes code snippets.
 
@@ -103,12 +99,6 @@ Access token defined on the platform used (Gitlab, Github...).
 ### Repository
 
 The URL obtained on the platform used (Gitlab, Github...) by clicking on "Clone" > HTTPS.
-
-Type :
-
-```
-https://github.com/InseeFrLab/docs.sspcloud.fr.git
-```
 
 ### Service
 

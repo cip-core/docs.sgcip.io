@@ -19,7 +19,7 @@
 * [🤝 How to contribute to the community?](docs/comment-contribuer-1/comment-contribuer/README.md)
   * [​📄 Write documentary content with Gitbook](docs/comment-contribuer-1/comment-contribuer/comment-utiliser-et-editer-gitbook-pour-la-documentation.md)
   * [​🕹️​ Offers interactive training thanks to Onyxia](docs/comment-contribuer-1/comment-contribuer/proposer-une-formation-interactive-grace-a-onyxia.md)
-  * [🔍 Référencer son Referencing its content on the sspcloud.fr site](docs/comment-contribuer-1/comment-contribuer/referencer-son-contenu-sur-le-site-sspcloud.fr.md)
+  * [🔍 Referencing its content on the SGCIP site](docs/comment-contribuer-1/comment-contribuer/referencer-son-contenu-sur-le-site-sspcloud.fr.md)
   * [🔧​​ Contribute to the service catalog ?](docs/comment-contribuer-1/comment-contribuer/comment-contribuer-au-catalogue-de-service.md)
 
 ## Reference documentation
@@ -35,8 +35,8 @@
 
 * [Onyxia Scale'Up : Onyxia community meetings](news/onyxia-scaleup-onyxia-community-meetings.md)
 * [Introduction to MMLOps : Presentation of ML Flow](news/introduction-to-mmlops-presentation-of-ml-flow.md)
-* [Kubernetes Lab: Introduction and Best Practices for Docker Deployment with Cloud SSP](news/kubernetes-lab-introduction-and-best-practices-for-docker-deployment-with-cloud-ssp.md)
-* [SPP Cloud : Launch Webinar](news/spp-cloud-launch-webinar.md)
+* [Kubernetes Lab: Introduction and Best Practices for Docker Deployment with Cloud SGCIP](news/kubernetes-lab-introduction-and-best-practices-for-docker-deployment-with-cloud-sgcip.md)
+* [SGCIP Cloud : Launch Webinar](news/sgcip-cloud-launch-webinar.md)
 * [Kubernetes infrastructure : Introductory webinar](news/kubernetes-infrastructure-introductory-webinar.md)
 
 ## Projects
