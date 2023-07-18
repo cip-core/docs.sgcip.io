@@ -33,12 +33,12 @@
 
 ## News
 
-* [Onyxia Scale'Up : Onyxia community meetings](actualites/onyxia-scaleup-les-rendez-vous-communautaires-onyxia.md)
-* [Introduction to MMLOps : Presentation of ML Flow](docs/actualites/introduction-au-mlops-presentation-de-ml-flow.md)
-* [Kubernetes Lab: Introduction and Best Practices for Docker Deployment with Cloud SSP](docs/actualites/atelier-kubernetes-introduction-et-bonnes-pratiques-du-deploiement-docker-avec-le-ssp-cloud.md)
-* [SPP Cloud : Launch Webinar](docs/actualites/spp-cloud-webinaire-de-lancement.md)
-* [Kubernetes infrastructure :  Introductory webinar](docs/actualites/linfrastructure-kubernetes-webinaire-dintroduction.md)
+* [Onyxia Scale'Up : Onyxia community meetings](news/onyxia-scaleup-onyxia-community-meetings.md)
+* [Introduction to MMLOps : Presentation of ML Flow](news/introduction-to-mmlops-presentation-of-ml-flow.md)
+* [Kubernetes Lab: Introduction and Best Practices for Docker Deployment with Cloud SSP](news/kubernetes-lab-introduction-and-best-practices-for-docker-deployment-with-cloud-ssp.md)
+* [SPP Cloud : Launch Webinar](news/spp-cloud-launch-webinar.md)
+* [Kubernetes infrastructure : Introductory webinar](news/kubernetes-infrastructure-introductory-webinar.md)
 
 ## Projects
 
-* [Data visualization: Population movements around the March 2020 lockdown](docs/projets/datavisualisation-mouvements-de-population-autour-du-confinement-de-mars-2020.md)
+* [Data visualization: Population movements around the March 2020 lockdown](projects/data-visualization-population-movements-around-the-march-2020-lockdown.md)
