@@ -1,9 +1,9 @@
 ---
 description: >-
-  Un accès aux couches basses pour une autonomie complète sur la configuration
-  d’environnements de développement avancés et spécifiques.
+  Access to the lower layers for complete autonomy on the configuration of
+  advanced and specific development environments.
 ---
 
-# L'infrastructure Kubernetes : webinaire d'introduction
+# Kubernetes infrastructure :  Introductory webinar
 
 {% embed url="https://minio.lab.sspcloud.fr/f7sggu/diffusion/kubernetes.mp4" %}
