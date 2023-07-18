@@ -1,42 +1,41 @@
 ---
 description: >-
-  En plus de d'écrire du contenu documentaire avec Gitbook, allez encore plus
-  loin et proposez une version interactive de vos tutoriels grâce à des
-  notebooks Jupyter ou bien des tutoriels learnr.
+  In addition to writing documentary content with Gitbook, go even further and
+  offer an interactive version of your tutorials with Jupyter notebooks or
+  learnr tutorials.
 ---
 
-# ​🕹️​ Proposer une formation interactive grâce à Onyxia
+# ​🕹️​ Offers interactive training thanks to Onyxia
 
-## **Tutoriel interactif sous forme de Notebook Jupyter**
+## Interactive tutorial in the form of a Jupyter Notebook&#x20;
 
-La méthode certainement la plus simple est d'héberger votre notebook Jupyter sur une plateforme `git` telle que [GitHub](https://github.com) ou [GitLab](https://gitlab.com).
+The easiest method is certainly to host your Jupyter notebook on a git platform such as [GitHub](https://github.com/) or [GitLab](https://about.gitlab.com/).&#x20;
 
-Vous pouvez prendre comme exemple le dépôt de [Jean-Michel Bernabotto](https://www.spyrales.fr/author/jean-michel-bernabotto/) suivant : [https://github.com/jmbernabotto/MachineLearning](https://github.com/jmbernabotto/MachineLearning). Dans votre dépôt, déclarez vos dépendances dans le fichier `requirements.txt`&#x20;
+You can take as an example the following Jean-Michel Bernabotto's deposit: [https://github.com/jmbernabotto/MachineLearning](https://github.com/jmbernabotto/MachineLearning). In your repository, declare your dependencies in the `requirements.txt`
 
-Puis ajoutez un script qui sera exécuté au lancement du serveur Jupyter sur la plateforme Onyxia : vous pouvez modifier le script `onyxia.sh` que vous trouverez dans ce dépôt.
+Then add a script that will be executed when the Jupyter server is launched on the Onyxia platform: you can modify the`onyxia.sh`  script that you will find in this repository.
 
-Ensuite, rendez-vous dans le [catalogue de service](https://datalab.sspcloud.fr/catalog/inseefrlab-helm-charts-datascience) d'Onyxia, sélectionnez le service Jupyter et dans les configurations avancée, dans l'onglet `Init` , collez l'URL vers le script de lancement que vous venez d'écrire. oyez bien vigilants à utiliser une URL de type _raw_ vers votre script. Par exemple, avec le dépôt ci-dessus, l'URL est [https://raw.githubusercontent.com/jmbernabotto/MachineLearning/master/onyxia.sh](https://raw.githubusercontent.com/jmbernabotto/MachineLearning/master/onyxia.sh).&#x20;
+Next, go to the Onyxia [service catalog](https://onyxia.euw1.prod.sgcip.io/catalog), select the Jupyter service and in the advanced configurations, in the Init tab, paste the URL to the launch script you just wrote. Be careful to use a raw URL to your script. For example, with the above repository, the URL is [https://raw.githubusercontent.com/jmbernabotto/MachineLearning/master/onyxia.sh. ](https://raw.githubusercontent.com/jmbernabotto/MachineLearning/master/onyxia.sh)
 
-![Configurer un service Jupyter - Script d'initialisation](../../../.gitbook/assets/frame-59.png)
+![Configure a Jupyter Service - Initialization Script](../../../.gitbook/assets/frame-59.png)
 
-Vous pouvez alors copier le lien en cliquant sur l'icône en haut à droite et le conserver pour permettre un accès direct à votre formation.  Maintenant rendez visible et accessible votre tutoriel au sein de la communauté SSP Cloud:
+You can then copy the link by clicking on the icon at the top right and keep it to allow direct access to your training. Now make your tutorial visible and accessible within the Cloud SSP community:
 
 {% content-ref url="referencer-son-contenu-sur-le-site-sspcloud.fr.md" %}
 [referencer-son-contenu-sur-le-site-sspcloud.fr.md](referencer-son-contenu-sur-le-site-sspcloud.fr.md)
 {% endcontent-ref %}
 
-## **Tutoriel interactif avec `learnr`**
+## Interactive tutorial with  **`learnr`**
 
-`learnr` est un package R qui permet de concevoir facilement des tutoriels interactifs en R Markdown. Si vous ne le connaissez pas, n'hésitez pas à consulter l'aide : [https://rstudio.github.io/learnr](https://rstudio.github.io/learnr).
+`learnr` is an R package that makes it easy to design interactive tutorials in R Markdown. If you do not know it, do not hesitate to consult the help: [https://rstudio.github.io/learnr](https://rstudio.github.io/learnr/).&#x20;
 
-Comme précédemment, le plus simple est d'héberger votre projet RStudio comprenant votre tutoriel sur [GitHub](https://github.com) ou [GitLab](https://gitlab.com). Vous pouvez prendre exemple sur le dépôt de démonstration suivant : [https://github.com/RLesur/learnr-onixya](https://github.com/RLesur/learnr-onixya). Dans votre dépôt, déclarez vos dépendances dans le fichier `DESCRIPTION` et rajoutez un script qui sera exécuté au lancement du serveur RStudio sur la plateforme Onyxia : vous pouvez modifier le script `onyxia.sh` que vous trouverez dans ce dépôt.
+As before, the easiest way is to host your RStudio project including your tutorial on [GitHub](https://github.com/) or [GitLab](https://about.gitlab.com/). You can take example on the following demo repository: [https://github.com/RLesur/learnr-onixya](https://github.com/RLesur/learnr-onixya). In your repository, declare your dependencies in the `DESCRIPTION` file and add a script that will be executed when the RStudio server is launched on the Onyxia platform: you can modify the `onyxia.sh` script that you will find in this repository.     &#x20;
 
-Ensuite, rendez-vous dans le [catalogue de service](https://datalab.sspcloud.fr/catalog/inseefrlab-helm-charts-datascience) d'Onyxia,  sélectionnez le service RStudio et dans l'onglet `Init` collez l'URL vers le script de lancement.\
-Soyez bien vigilants à utiliser une URL de type _raw_ vers votre script. Avec le dépôt précédent, l'URL est [https://raw.githubusercontent.com/RLesur/learnr-onixya/master/onyxia.sh](https://raw.githubusercontent.com/RLesur/learnr-onixya/master/onyxia.sh).
+Then, go to the Onyxia[ service catalog](https://onyxia.euw1.prod.sgcip.io/catalog), select the RStudio service and in the Init tab paste the URL to the launch script. Be careful to use a raw URL to your script. With the previous repository, the URL is [https://raw.githubusercontent.com/RLesur/learnr-onixya/master/onyxia.sh.](https://raw.githubusercontent.com/RLesur/learnr-onixya/master/onyxia.sh)  &#x20;
 
-![Configurer un service Rstudio - Script d'initialisation](../../../.gitbook/assets/frame-60.png)
+![Configure an Rstudio Service - Initialization Script](../../../.gitbook/assets/frame-60.png)
 
-Vous pouvez alors copier le lien en cliquant sur l'icône en haut à droite et le conserver pour permettre un accès direct à votre formation. Maintenant rendez visible et accessible votre tutoriel au sein de la communauté SSP Cloud:
+You can then copy the link by clicking on the icon at the top right and keep it to allow direct access to your training. Now make your tutorial visible and accessible within the Cloud SSP community:
 
 {% content-ref url="referencer-son-contenu-sur-le-site-sspcloud.fr.md" %}
 [referencer-son-contenu-sur-le-site-sspcloud.fr.md](referencer-son-contenu-sur-le-site-sspcloud.fr.md)

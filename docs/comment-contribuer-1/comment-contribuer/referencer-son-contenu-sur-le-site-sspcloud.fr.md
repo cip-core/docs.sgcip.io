@@ -1,36 +1,34 @@
 ---
-description: Comment référencer son contenu sur le site sspcloud.fr ?
+description: How to reference its content on the sspcloud.fr site?
 ---
 
-# 🔍 Référencer son contenu sur le site sspcloud.fr
+# 🔍 Référencer son Referencing its content on the sspcloud.fr site
 
-## 🎓 Référencer une formation&#x20;
+## 🎓 Referencing a training
 
 ![](../../../.gitbook/assets/formations.png)
 
-[Le catalogue d'actualités et projets](https://spyrales.sspcloud.fr/trainings) est alimenté à partir du fichier `json` qui se trouve ci-dessous. Il est possible d'y référencer du contenu de type :‌
+The catalog of news and projects is fed from the json file below. It is possible to reference content such as:‌
 
-* **Onyxia - Guide** pour tous les pas à pas de prise en main de la plateforme Onyxia
-* **Tutoriels** pour diverses aides, guides et formations
-
-{% embed url="https://git.lab.sspcloud.fr/innovation/plateforme-onyxia/services-ressources/-/blob/master/formations.json" %}
-
-Il vous suffit donc de faire une _**merge request**_ proposant de nouveaux contenus.‌
-
-En pratique, il s'agit de créer de nouvelles entrées dans ce fichier avec les méta-données sur les formations que vous souhaitez référencer. Ces méta-données sont structurées suivant le schéma [http://schema.org/Course](http://schema.org/Course).
-
-## 🗞 Référencer une actualité ou un projet
-
-![ https://spyrales.sspcloud.fr/trainings](../../../.gitbook/assets/projets.png)
-
-[Le catalogue d'actualités et projets](https://spyrales.sspcloud.fr/trainings)  est alimenté à partir du fichier `json` qui se trouve ci-dessous.  Il est possible d'y référencer du contenu de type :&#x20;
-
-* **Démonstrations** (proposer des bouts de codes, des projets exploratoire, etc.)
-* **Actualités** (article de blog ou présenter un évènement)
-* **Projets** (présenter des cas d'usages du datalab)
+* **Onyxia - Guide**for all the steps to get started with the Onyxia platform &#x20;
+* **Tutorials** for various helps, guides and training
 
 {% embed url="https://git.lab.sspcloud.fr/innovation/plateforme-onyxia/services-ressources/-/blob/master/formations.json" %}
 
-Il vous suffit donc de faire une _**merge request**_ proposant de nouveaux contenus.
+So all you have to do is make a merge request offering new content.&#x20;
 
-En pratique, il s'agit de créer de nouvelles entrées dans ce fichier avec les méta-données sur les formations que vous souhaitez référencer. Ces méta-données sont structurées suivant le schéma [http://schema.org/Course](http://schema.org/Course).&#x20;
+In practice, it is a question of creating new entries in this file with the metadata on the training courses you want to reference. This metadata is structured according to the [http://schema.org/Course](http://schema.org/Course) schema.
+
+## 🗞 Reference a news item or a project&#x20;
+
+![https://spyrales.sspcloud.fr/trainings](../../../.gitbook/assets/projets.png)
+
+The catalog of news and projects is fed from the json file below. It is possible to reference content such as:
+
+* **Demonstrations** (propose code snippets, exploratory projects, etc.)
+* **News** (blog post or present an event)
+* **Projects** (present use cases of the datalab)
+
+{% embed url="https://git.lab.sspcloud.fr/innovation/plateforme-onyxia/services-ressources/-/blob/master/formations.json" %}
+
+So all you have to do is make a merge request offering new content. In practice, it is a question of creating new entries in this file with the metadata on the training courses you want to reference. This metadata is structured according to the [http://schema.org/Course](http://schema.org/Course) schema.

@@ -1,37 +1,26 @@
 ---
-description: >-
-  Documentation des différents paramètres d'un service.
+description: Documentation of the different parameters of a service.
 ---
 
-# Configuration des services
+# Configuring Services
 
-Après avoir cliqué sur "Nouveau service" > "RStudio/Jupyter-python/VScode-python" > "Lancer"
+After clicking "New Service" > "RStudio/Jupyter-python/VScode-python" > "Launch"
 
-## Nom personnalisé
+## Custom name&#x20;
 
-Pour reconnaître le service et/ou la configuration si on l'enregistre en cliquant sur le symbole de marque page en haut à droite.
-Si le nom existe déjà parmi les configurations enregistrées, l'enregistrement écrasera l'ancienne configuration.
+To recognize the service and/or configuration if you register it by clicking on the bookmark symbol at the top right. If the name already exists among the saved configurations, saving will overwrite the old configuration. Convenient to distinguish different services of the same type (RStudio, Jupyter ...).
 
-Pratique pour distinguer différents services d'un même type (RStudio, Jupyter...).
+## Share the service
 
-## Partager le service
-
-Il est possible de partager un service à un groupe de personnes en cochant la case "Partager le service" à l'ouverture du service.
-Les autres membres du groupe verront le service et pourront l'utiliser.
-La création de groupes se fait en écrivant aux administrateurs sur Tchap (en privé) ou par mail à l'adresse innovation@insee.fr, en communiquant le nom de groupe, les noms d'utilisateurs des membres, le besoin ou non d'un espace de stockage associé sur MinIO.
+It is possible to share a service to a group of people by checking the "Share service" box when opening the service. Other members of the group will see the service and will be able to use it. The creation of groups is done by writing to the administrators on Tchap (privately) or by email to the address innovation@insee.fr, communicating the group name, the usernames of the members, the need or not for an associated storage space on MinIO.
 
 {% hint style="info" %}
-Pour un besoin ponctuel, il est aussi possible de partager un service que l'on a créé à une autre personne.
-Il suffit de lui communiquer l'URL (type https://user-aaaaaaaaaaaaaa-xxxxxxx-x.user.lab.sspcloud.fr/), ainsi que le mot de passe du service.
-Le nom d'utilisateur reste **Onyxia**. Attention, il est recommandé de changer le mot de passe du service lors de son lancement (onglet *Security*) pour ne pas le faire fuiter.
-Il faudra aussi décocher *Enable IP protection* et *Enable network policy* dans l'onglet *Security*.
-Une seule personne à la fois peut se connecter à un service RStudio.  
+For a one-time need, it is also possible to share a service that has been created with another person. All you have to do is give him the URL (type https://user-aaaaaaaaaaaaaa-xxxxxxx-x.user.lab.sspcloud.fr/), as well as the password of the service. The username remains Onyxia. Attention, it is recommended to change the password of the service when it is launched (Security tab) so as not to leak it. You will also need to uncheck Enable IP protection and Enable network policy in the Security tab. Only one person at a time can connect to an RStudio service.
 {% endhint %}
 
 ## S3
 
-Ce qui concerne l'espace de stockage S3.
-Pour apprendre à utiliser cet onglet, voir la [page dédiée](stockage-de-donnees.md).
+This concerns the S3 storage space. To learn how to use this tab, see the [dedicated page.](http://localhost:5000/o/PJE4wAHZSTsTbfQZzqlZ/s/zGooQhLS0mJUxkbJDe0X/)
 
 ## Kubernetes
 
@@ -39,35 +28,33 @@ Pour apprendre à utiliser cet onglet, voir la [page dédiée](stockage-de-donne
 
 ### PersonalInit
 
-Un lien vers un script shell (enchaînement de commandes linux) qui est exécuté juste après le lancement du service.
-Pratique pour automatiser la mise en place de certaines configurations.
+A link to a shell script (linux command chain) that is executed right after the service is launched. Convenient to automate the implementation of certain configurations.
 
-Ce lien du script doit être accessible sur internet, par exemple sur [https://git.lab.sspcloud.fr/](https://git.lab.sspcloud.fr/) avec un projet public ou sur le [stockage S3](stockage-de-donnees.md) avec un fichier public.
+This link to the script must be accessible on the internet, for example on https://git.lab.sspcloud.fr/ with a public project or on [S3 storage](https://app.gitbook.com/o/PJE4wAHZSTsTbfQZzqlZ/s/zGooQhLS0mJUxkbJDe0X/\~/changes/8/onyxia-guide/controle-de-version/stockage-de-donnees) with a public file.&#x20;
 
-[Exemple de script d'initialisation](https://git.drees.fr/drees_code_public/ressources/tutos/-/blob/diffusion/contenu/init.sh) qui clone un projet à partir d'une instance Gitlab privée, configure les options globales de RStudio, ouvre automatiquement le projet RStudio cloné, installe et sélectionne la correction orthographique française, personnalise les bribes de codes (*snippets*).
+Sample initialization script that clones a project from a private Gitlab instance, configures RStudio global options, automatically opens the cloned RStudio project, installs and selects French spell checking, customizes code snippets.
 
 {% hint style="warning" %}
-Le script est exécuté en tant que superutilisateur (*Root*) et les fichiers qu'il crée sont ainsi la propriété du superutilisateur.
-Ceci génère des erreurs ensuite quand ces fichiers sont appelés, par exemple des fichiers de configuration de RStudio.
-Pour rendre à l'utilisateur normal (qui s'appelle *onyxia*) les droit sur son dossier personnel :
+The script is run as root, and the files it creates are owned by the root. This generates errors when these files are called, for example RStudio configuration files. To give back to the normal user (which is called onyxia) the rights on his personal file:
+
 ```bash
 chown -R ${USERNAME}:${GROUPNAME} ${HOME}
 ```
 {% endhint %}
 
-
 ### PersonalInitArgs
 
-Des options à passer au script d'initialisation, séparées par des espaces et que l'on peut ensuite appeler avec `$1`, `$2`...
+Options to pass to the initialization script, separated by spaces and then called with `$1`, `$2`...
 
-Par exemple si on inscrit dans le champ *PersonalInitArgs* `fichier1.txt fichier2.txt`, et qu'on utilise ce script d'initialisation :
+For example if you enter in the PersonalInitArgs field `fichier1.txt fichier2.txt`, and that we use this initialization script:
 
 ```bash
 #!/bin/bash
 touch $1
 touch $2
 ```
-Le script créera via la commande `touch` deux fichiers `fichier1.txt` et `fichier2.txt`.
+
+The script will create via the touch command two files`fichier1.txt` et `fichier2.txt`.
 
 ## Onyxia
 
@@ -79,47 +66,46 @@ Le script créera via la commande `touch` deux fichiers `fichier1.txt` et `fichi
 
 ### Password
 
-C'est le mot de passe à saisir lorsqu'on ouvre un service, celui donné par "Copier le mot de passage" sur la page des services.
-Il est fourni par le paramètre général "Mot de passe pour vos services" que l'on trouve dans "Mon Compte" > "Informations du compte", sauf si on en a défini un particulier au niveau du service.
+This is the password to enter when opening a service, the one given by "Copy the password" on the services page. It is provided by the general setting "Password for your services" found in "My Account" > "Account Information", unless an individual has been defined at the service level.
 
 ### Enable IP protection
 
-Si coché, le service n'est accessible que par une seule IP, à décocher si l'on souhaite travailler de deux endroits différents.
+If checked, the service is only accessible by one IP, to be unchecked if you want to work from two different places.
 
 ### Enable network policy
 
 ## Git
 
-Pour apprendre à utiliser cet onglet, voir la [page dédiée](controle-de-version.md).
+To learn how to use this tab, see the dedicated [page](controle-de-version/).&#x20;
 
 {% hint style="warning" %}
-Il n'est pas possible de cloner automatiquement un projet privé d'une instance privée (c'est-à-dire autre que gitlab.com et github.com).
-Pour le faire, il faudra recourir à un script shell comme indiqué [ici](#init).
+It is not possible to automatically clone a private project from a private instance (that is, other than gitlab.com and github.com). To do this, it will be necessary to use a shell script as shown [here](configuration-des-services.md).&#x20;
 {% endhint %}
 
 ### Enabled
 
-Si coché, configure Git et tente un clone au démarrage du service.
+If checked, configure Git and attempt a clone when the service starts.
 
 ### Name
 
-Le nom qui apparaîtra dans les commits (pas le nom d'utilisateur du compte Gitlab ou Github).
+The name that will appear in commits (not the username of the Gitlab or Github account).
 
 ### Email
 
-L'adresse email qui apparaîtra dans les commits (pas forcément le mail associé au compte Gitlab ou Github).
+The email address that will appear in the commits (not necessarily the email associated with the Gitlab or Github account).
 
 ### Cache
 
 ### Token
 
-Jeton d'accès défini sur la plateforme utilisée (Gitlab, Github...).
+Access token defined on the platform used (Gitlab, Github...).
 
 ### Repository
 
-L'URL obtenue sur la plateforme utilisée (Gitlab, Github...) en cliquant sur "Cloner" > HTTPS.
+The URL obtained on the platform used (Gitlab, Github...) by clicking on "Clone" > HTTPS.
 
-De type :
+Type :
+
 ```
 https://github.com/InseeFrLab/docs.sspcloud.fr.git
 ```
@@ -130,6 +116,6 @@ https://github.com/InseeFrLab/docs.sspcloud.fr.git
 
 ### Persistence
 
-### Vault 
+### Vault
 
-Pour apprendre à utiliser cet onglet, voir la [page dédiée](gestion-des-secrets.md).
+To learn how to use this tab, see the dedicated [page](broken-reference).&#x20;

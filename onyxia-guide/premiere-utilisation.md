@@ -1,70 +1,69 @@
 ---
-description: Visite guidée du Datalab
+description: Guided tour of the Datalab
 ---
 
-# Première utilisation
+# First time use
 
-Bienvenue sur le Datalab Onyxia, plateforme libre service mutualisée de traitement de données, destinée aux statisticiens et _data scientists_ de l'Etat. Ce tutoriel propose une visite guidée du Datalab pour être rapidement opérationnel dans l'utilisation de ses services.
+Welcome to the Datalab Onyxia, a shared self-service data processing platform for statisticians and data scientists of the State. This tutorial offers a guided tour of the Datalab to be quickly operational in the use of its services.
 
 {% hint style="warning" %}
-Les conditions d'utilisation du Datalab sont consultables à [cette adresse](https://sspcloud.fr/tos\_fr.md). Nous rappelons que le Datalab est destiné exclusivement au traitement de **données publiques et non-sensibles**. Des projets d'expérimentation mobilisant des données non ouvertes peuvent être menés en concertation avec l'équipe du Datalab, sous réserve de se conformer aux règles de sécurité spécifiques au projet.
+&#x20;We remind you that the Datalab is intended exclusively for the processing of public and non-sensitive data. Experimental projects using non-open data can be carried out in consultation with the Datalab team, provided that they comply with the project's specific safety rules
 {% endhint %}
 
-## Le catalogue de services
+## The service catalog
 
-Le [catalogue de services](https://datalab.sspcloud.fr/catalog/inseefrlab-helm-charts-datascience) est au centre de l'utilisation du Datalab. Il propose un ensemble de services destinés aux traitements statistiques de données ainsi qu'à la gestion complète des projets de _data science_.
+The [service catalog](https://onyxia.euw1.prod.sgcip.io/catalog/cip) is at the center of the use of the Datalab. It offers a set of services for statistical data processing as well as the complete management of data science projects.
 
 ![](../.gitbook/assets/catalogue.png)
 
-### Lancer un service
+### Start a service
 
-Pour lancer un service, il suffit de cliquer sur le bouton `Lancer` du service désiré.&#x20;
+To launch a service, simply click on the Launch button of the desired service.
 
 ![](../.gitbook/assets/lancer-un-service.png)
 
-Une page centrée sur le service demandé s'ouvre alors, qui offre plusieurs possibilités :&#x20;
+A page focused on the requested service opens, which offers several possibilities:
 
-* cliquer à nouveau sur le bouton `Lancer` pour lancer le service avec sa configuration par défaut ;
-* personnaliser le nom que portera l'instance une fois le service lancé ;
-* dérouler un menu de configuration afin de personnaliser la configuration du service avant de le lancer ;&#x20;
-* sauvegarder une configuration personnalisée en cliquant sur le signet en haut à droite du service.
+* Click the Launch button again to launch the service with its default configuration;
+* Customize the name of the instance after the service is launched;
+* Expand a configuration menu to customize the configuration of the service before launching it;
+* Save a custom configuration by clicking the bookmark at the top right of the service.
 
 {% hint style="info" %}
-La configuration précise des services du Datalab constitue un usage avancé et n'est donc pas traité dans ce tutoriel, mais dans d'autres pages de ce site documentaire.
+The precise configuration of Datalab services is an advanced use and is therefore not covered in this tutorial, but in other pages of this documentary site.
 {% endhint %}
 
-### Utiliser un service
+### Use a service
 
-L'action de lancer un service amène automatiquement sur la page [Mes Services](https://datalab.sspcloud.fr/my-services), où sont listées toutes les instances en activité sur le compte de l'utilisateur.
+The action of launching a service automatically leads to the [My Services](https://onyxia.euw1.prod.sgcip.io/my-services) page, where all active instances on the user's account are listed.
 
 ![](../.gitbook/assets/utiliser-un-service.png)
 
-Une fois le service lancé, un bouton `Ouvrir` apparaît qui permet l'accès au service. Un mot de passe — et, selon les services, un nom d'utilisateur — est généralement requis pour pouvoir utiliser le service. Ces informations sont disponibles dans le `README` associé au service, auquel on accède en cliquant sur le bouton du même nom.&#x20;
+Once the service is launched, an Open button appears that allows access to the service. A password — and, depending on the service, a username — is generally required in order to use the service. This information is available in the README associated with the service, which can be accessed by clicking on the button of the same name.
 
-### Supprimer une instance
+### Delete an instance
 
-Supprimer une instance d'un service s'effectue simplement en cliquant sur l'icône en forme de poubelle en dessous de l'instance.
+Removing an instance from a service is done simply by clicking the trash can icon below the instance.
 
 {% hint style="danger" %}
-Pour certains services, la suppression d'une instance entraîne la suppression de toutes les données associées, et cette action est irrémédiable. Il est donc nécessaire de toujours bien lire le `README` associé à l'instance, qui précise les conséquences d'une suppression de l'instance. De manière générale, il est très important de s'assurer que les données ainsi que le code utilisés sont sauvegardés avant de supprimer l'instance. L'idéal est de [versionner son code avec Git](controle-de-version.md) et de procéder à des sauvegardes régulières des données à l'aide du [système de stockage S3](stockage-de-donnees.md).
+For some services, deleting an instance deletes all associated data, and this action is irretrievable. It is therefore necessary to always read the README associated with the instance, which specifies the consequences of deleting the instance. In general, it is very important to ensure that the data and code used are backed up before deleting the instance. The ideal is to[ version your code with Git](controle-de-version/) and perform regular data backups using the[ S3 storage system.](controle-de-version/stockage-de-donnees.md)
 {% endhint %}
 
 {% hint style="danger" %}
-Les ressources mises à disposition pour l'execution des services sont partagées entre les différents utilisateurs du Datalab. Veuillez à ne pas laisser en cours des services dont vous ne faites plus l'usage. Nous procédons parfois à une suppression systématique des instances inactives depuis un certain temps, afin de libérer des ressources.
+The resources made available for the execution of the services are shared between the different users of the Datalab. Please do not leave services that you no longer use. We sometimes systematically delete instances that have been inactive for some time in order to free up resources.
 {% endhint %}
 
-## Aller plus loin
+## Go further
 
-Nous avons souhaité présenter à travers ce tutoriel l'usage standard des services proposés sur le Datalab. Des usages plus avancés sont présentés dans d'autres pages de ce site documentaire :&#x20;
+We wanted to present through this tutorial the standard use of the services offered on the Datalab. More advanced uses are presented in other pages of this documentary site:
 
-* [versionner son code avec Git](controle-de-version.md)
-* [stocker ses données avec MinIO](stockage-de-donnees.md)
-* [gérer ses secrets avec Vault](gestion-des-secrets.md)
-* travailler sur des projets collaboratifs
-* [s'auto-former avec le Datalab](https://www.sspcloud.fr/documentation)
+* [version your code with Git](controle-de-version/)&#x20;
+* [store your data with MinIO ](controle-de-version/stockage-de-donnees.md)
+* [manage your secrets with Vault ](gestion-des-secrets.md)
+* Work on collaborative projects
+* self-training with the Datalab&#x20;
 
 ## Support
 
-Le support et l'aide à l'utilisation du Datalab sont effectuées sur un [salon dédié](https://matrix.to/#/#SSPCloudXDpAw6v:agent.finances.tchap.gouv.fr) du service de messagerie instantanée interministériel [Tchap](https://www.tchap.gouv.fr). Toute question sur l'utilisation du Datalab ou suggestion d'amélioration y sont les bienvenues.
+Support and help in the use of the Datalab are carried out at a dedicated exhibition of the interdepartmental instant messaging service Tchap. Any questions about the use of the Datalab or suggestions for improvement are welcome.
 
-Pour les agents n'utilisant pas Tchap, il est également possible de nous contacter par mail sur la BAL innovation@insee.fr.

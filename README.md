@@ -1,6 +1,6 @@
 ---
 description: >-
-  All resource to help community members to get onboarded on the platform and
+  All resources to help community members to get onboarded on the platform and
   the services available!
 ---
 
@@ -24,8 +24,8 @@ Découvre facilement les premiers usages de la plateforme en suivant ce petit gu
 
 ## Envie d'en découvrir un peu plus ?
 
-{% content-ref url="onyxia-guide/controle-de-version.md" %}
-[controle-de-version.md](onyxia-guide/controle-de-version.md)
+{% content-ref url="onyxia-guide/controle-de-version/" %}
+[controle-de-version](onyxia-guide/controle-de-version/)
 {% endcontent-ref %}
 
 {% content-ref url="onyxia-guide/gestion-des-secrets.md" %}

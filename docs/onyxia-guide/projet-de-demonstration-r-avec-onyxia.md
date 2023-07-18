@@ -1,55 +1,55 @@
 ---
-description: Une courte démonstration pour lancer un projet R avec le datalab SSP Cloud
+description: A short demonstration to launch an R project with the SSP Cloud datalab
 ---
 
-# Lancer un projet R avec le datalab
+# Start an R project with the datalab
 
-Une courte démonstration pour utiliser R avec le [datalab SSP Cloud](https://datalab.sspcloud.fr): travailler avec du code Git et des données hébergées sur [Mes Fichiers](https://datalab.sspcloud.fr/mes-fichiers) du datalab.
+A short demonstration to use R with the [SSP Cloud datalab](https://onyxia.euw1.prod.sgcip.io/home): working with Git code and data hosted on My Datalab Files.
 
-## Configuration de l'environnement
+## Setting up the environment&#x20;
 
-* Ouvrir le [catalogue de service](https://datalab.sspcloud.fr/my-lab/catalogue/inseefrlab-helm-charts-datascience)
-* Lancer et ouvrir un service RStudio
-* Se connecter avec les identifiants suivants:
+* Open the [service catalog](https://onyxia.euw1.prod.sgcip.io/catalog)&#x20;
+* Launch and open an RStudio service
+* Se connecter avec les iLog in with the following credentials:
   * user: `onyxia`
-  *   password: `Votre mot de passe pour vos services`
+  *   password: Your password for your services
 
-      Vous pouvez le trouver sur votre [compte](https://datalab.sspcloud.fr/mon-compte) ou le copier depuis directement [Mes services](https://datalab.sspcloud.fr/my-services) en cliquant sur la clef
-*   Dans votre RStudio, clonez et ouvrez ce projet:
+      You can find it on your account or copy it directly from My Services by clicking on the key.
+*   In your RStudio, clone and open this project:
 
     ```
     git2r::clone("https://github.com/RLesur/sspcloud-demo.git", "sspcloud-demo")
     rstudioapi::openProject("sspcloud-demo")
     ```
-* Installer les dépendances déclarées dans le fichier `DESCRIPTION`
+* Install dependencies declared in the file `DESCRIPTION`
 
-## Utilisation du système de stockage
+## Using the storage system&#x20;
 
-### Cheatsheet (Antisèche)
+### Cheatsheet&#x20;
 
-**Trouver le nom de son** _**bucket**_ **personnel**
+Find the name of your personal bucket
 
-Chaque utilisateur du SSP Cloud dispose d'un espace de stockage personnel sur le système de stockage du SSP Cloud. Ces espaces de stockage s'appellent des _buckets_.
+Each Cloud SSP user has personal storage space on the Cloud SSP storage system. These storage spaces are called buckets.
 
-Pour trouver le nom de son espace personnel de stockage, on peut se rendre sur la page [mes fichiers](https://datalab.sspcloud.fr/mes-fichiers). On trouve alors le nom de son **bucket personnel**.
+To find the name of your personal storage space, you can go to the my files page. We then find the name of his personal bucket.
 
-**Télécharger un fichier**
+Upload a file&#x20;
 
 ```
 aws.s3::save_object(object, bucket, region = "")
 ```
 
-**Importer un fichier**
+**Import a  file**
 
 ```
 aws.s3::put_object(file, object, bucket, region = "")
 ```
 
-### Exemple #1 : Importer un rapport R Markdown
+### Exemple #1 : Import an R Markdown report
 
-Le fichier `s3.Rmd` présente les commandes de base pour gérer ses fichiers cloud
+The `s3.Rmd` presents the basic commands to manage its cloud files
 
-*   générer le rapport
+*   generate the report
 
     ```
     # Modifier le bucket ci-dessous (renseignez votre bucket)
@@ -57,20 +57,20 @@ Le fichier `s3.Rmd` présente les commandes de base pour gérer ses fichiers clo
 
     rmarkdown::render("s3.Rmd", params = list(bucket = bucket), output_dir = "out")
     ```
-*   Importer le rapport
+*   Import a report
 
     ```
     source("_upload.R")
     ```
 
-### Exemple #2 : Travailler avec des données stockées sur MinIO
+### Exemple #2 : Working with data stored on MinIO&#x20;
 
 Un exemple minimal est présent dans le fichier [datasaurus.R](https://github.com/RLesur/sspcloud-demo/blob/main/datasaurus.R) :
 
-* les données du _datasaurus_ sont publiquement disponibles à cette adresse [https://minio.lab.sspcloud.fr/f7sggu/sspcloud-demo/data/datasaurus.csv](https://minio.lab.sspcloud.fr/f7sggu/sspcloud-demo/data/datasaurus.csv)
-* on construit un graphique ggplot qu'on sauvegarde en `png` et qu'on uploade sur MinIO
+* Datasaurus data are publicly available at this address[https://minio.lab.sspcloud.fr/f7sggu/sspcloud-demo/data/datasaurus.csv](https://minio.lab.sspcloud.fr/f7sggu/sspcloud-demo/data/datasaurus.csv)
+* we build a ggplot graph that we save in png and upload to MinIO
 
-Pour exécuter ce pipeline :
+To run this pipeline:
 
 ```
 source("datasaurus.R")

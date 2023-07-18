@@ -1,35 +1,34 @@
 # FAQ
 
-## 🟠 Je ne trouve pas le mot de passe d’accès à mon service.&#x20;
+## 🟠 I can't find the password to access my service.&#x20;
 
-Le mot de passe est le même pour tous les services et est accessible depuis la page [Mon compte](https://datalab.sspcloud.fr/account) ou la page [Mes services](https://datalab.sspcloud.fr/my-service) en cliquant sur le bouton `Mot de passe des services`
+The password is the same for all services and can be accessed from the [My Account ](https://onyxia.euw1.prod.sgcip.io/account)page or the [My Services](https://onyxia.euw1.prod.sgcip.io/my-services) page by clicking on the Services Password button.
 
-## 🟠 Quand je crée un service R Studio, quels sont les identifiants et le mot de passe d’accès à saisir ?
+## 🟠 When I create an R Studio service, what are the login and password to enter?&#x20;
 
-L'identifiant RStudio est: `onyxia` Le mot de passe est le même pour tous les services et est accessible depuis la page [Mon compte](https://datalab.sspcloud.fr/account) ou la page [Mes services](https://datalab.sspcloud.fr/my-service) en cliquant sur le bouton `Mot de passe des services`
+The RStudio ID is: onyxia The password is the same for all services and can be accessed from the [My Account page](https://onyxia.euw1.prod.sgcip.io/account) or the [My Services](https://onyxia.euw1.prod.sgcip.io/my-services) page by clicking on the Services Password button.
 
-## 🟠 Est-ce que je peux modifier mes identifiants Git une fois le service créé ?&#x20;
+## 🟠 Can I change my Git credentials after the service is created?
 
-Oui, il est possible de modifier plusieurs informations liées au compte depuis la page [Mon compte](https://datalab.sspcloud.fr/account).
+Yes, it is possible to edit several account information from the [My Account page](https://onyxia.euw1.prod.sgcip.io/account).&#x20;
 
-## 🟠 J'ai l'impression que Blazing SQL ne fonctionne pas...
+## 🟠 I feel like Blazing SQL doesn't work...
 
-Dans le formulaire de configuration, il y a l’onglet dédiées aux ressources où vous devez réserver la mémoire (Mi), la CPU et la GPU d’un service avant son lancement.
+In the configuration form, there is the resource tab where you need to reserve the memory (Mi), CPU and GPU of a service before it launches.
 
-## 🟠 Mon service me renvoie une erreur 403.&#x20;
+## 🟠 My service returns a 403 error.&#x20;
 
-Une erreur 403 est liée à la protection réseau qu'on applique aux services. Les services créés à partir d'une certaine IP ne sont initialement accessibles que depuis cette IP.  Cette protection est gérée dans l'onglet « Security » avec la case à cocher « Enable IP protection ».
+A 403 error is related to the network protection that is applied to the services. Services created from a certain IP are initially only accessible from that IP. This protection is managed in the "Security" tab with the "Enable IP protection" checkbox.
 
-## 🟠 Comment obtenir des logs sur le lancement de mon service ?
+## 🟠 How do I get logs on the launch of my service?
 
-Cette manipulation nécessite l'usage d'un terminal dans un service RStudio, Jupyter... Il faut d'abord trouver le nom de son *pod* Kubernetes :
+This manipulation requires the use of a terminal in an RStudio service, Jupyter ... First you have to find the name of your Kubernetes pod:
 
 ```
 kubectl get pod
 ```
 
-Par exemple rstudio-xxxxxx-x ou jupyter-python-xxxxxx-x.
-Pour ensuite afficher les logs de ce pod :
+For example rstudio-xxxxxx-x or jupyter-python-xxxxxx-x. To then display the logs of this pod:
 
 ```
 kubectl logs rstudio-xxxxxx-x
