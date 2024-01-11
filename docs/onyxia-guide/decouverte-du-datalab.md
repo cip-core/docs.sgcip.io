@@ -12,10 +12,10 @@ The Onyxia project is based on the observation of common difficulties encountere
 * Inadequate infrastructure, both in terms of resources and technology, which hinders innovation;
 * Difficulty in moving from experimentation to production, due to multiple separations (physical separation, development language, working methods) between business departments and IT production
 
-Faced with this situation, the SGCIP Datalab was built to offer a multi-level pooling-platform: :
+Faced with this situation, the SGCIP Datalab was built to offer a multi-level pooling platform:
 
-* Sharing a modern infrastructure, centered around the deployment of services via containers, and sized for data science uses; _;_
-* Sharing of methods, through the pooling of proposed data science services, to which everyone can contribute; ;
+* Sharing a modern infrastructure, centered around the deployment of services via containers, and sized for data science uses;
+* Sharing of methods, through the pooling of proposed data science services, to which everyone can contribute;
 * Knowledge sharing, through training associated with the Datalab as well as the constitution of mutual aid communities focused on its use.
 
 {% hint style="info" %}
